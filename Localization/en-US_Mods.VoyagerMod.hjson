@@ -6,3 +6,6 @@ Items: {
 		Tooltip: ""
 	}
 }
+
+Tiles.MalachiteOre.MapEntry: Malachite Ore
+WorldGen.MalachiteOrePassMessage: Mods.VoyagerMod.WorldGen.MalachiteOrePassMessage

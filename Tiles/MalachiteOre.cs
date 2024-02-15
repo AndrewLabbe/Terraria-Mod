@@ -7,9 +7,9 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
-namespace ExampleMod.Content.Tiles
+namespace VoyagerMod.Tiles
 {
-	public class ExampleOre : ModTile
+	public class MalachiteOre : ModTile
 	{
 		public override void SetStaticDefaults() {
 			TileID.Sets.Ore[Type] = true;
@@ -37,12 +37,12 @@ namespace ExampleMod.Content.Tiles
 		}
 	}
 
-	public class ExampleOreSystem : ModSystem
+	public class MalachiteOreSystem : ModSystem
 	{
-		public static LocalizedText ExampleOrePassMessage { get; private set; }
+		public static LocalizedText MalachiteOrePassMessage { get; private set; }
 
 		public override void SetStaticDefaults() {
-			ExampleOrePassMessage = Mod.GetLocalization($"WorldGen.{nameof(ExampleOrePassMessage)}");
+			MalachiteOrePassMessage = Mod.GetLocalization($"WorldGen.{nameof(MalachiteOrePassMessage)}");
 		}
 
 		// World generation is explained more in https://github.com/tModLoader/tModLoader/wiki/World-Generation
@@ -56,20 +56,20 @@ namespace ExampleMod.Content.Tiles
 			if (ShiniesIndex != -1) {
 				// Next, we insert our pass directly after the original "Shinies" pass.
 				// ExampleOrePass is a class seen bellow
-				tasks.Insert(ShiniesIndex + 1, new ExampleOrePass("Example Mod Ores", 237.4298f));
+				tasks.Insert(ShiniesIndex + 1, new MalachiteOrePass("Malachite Ore", 237.4298f));
 			}
 		}
 	}
 
-	public class ExampleOrePass : GenPass
+	public class MalachiteOrePass : GenPass
 	{
-		public ExampleOrePass(string name, float loadWeight) : base(name, loadWeight) {
+		public MalachiteOrePass(string name, float loadWeight) : base(name, loadWeight) {
 		}
 
 		protected override void ApplyPass(GenerationProgress progress, GameConfiguration configuration) {
 			// progress.Message is the message shown to the user while the following code is running.
 			// Try to make your message clear. You can be a little bit clever, but make sure it is descriptive enough for troubleshooting purposes.
-			progress.Message = ExampleOreSystem.ExampleOrePassMessage.Value;
+			progress.Message = MalachiteOreSystem.MalachiteOrePassMessage.Value;
 
 			// Ores are quite simple, we simply use a for loop and the WorldGen.TileRunner to place splotches of the specified Tile in the world.
 			// "6E-05" is "scientific notation". It simply means 0.00006 but in some ways is easier to read.
@@ -83,7 +83,7 @@ namespace ExampleMod.Content.Tiles
 
 				// Then, we call WorldGen.TileRunner with random "strength" and random "steps", as well as the Tile we wish to place.
 				// Feel free to experiment with strength and step to see the shape they generate.
-				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<ExampleOre>());
+				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<MalachiteOre>());
 
 				// Alternately, we could check the tile already present in the coordinate we are interested.
 				// Wrapping WorldGen.TileRunner in the following condition would make the ore only generate in Snow.
