@@ -5,4 +5,11 @@ Items: {
 		DisplayName: Basic Sword
 		Tooltip: ""
 	}
-} 
+
+	MalachiteOre: {
+		DisplayName: Malachite Ore
+		Tooltip: ""
+	}
+}
+
+Tiles.MalachiteOre.MapEntry: Malachite Ore
