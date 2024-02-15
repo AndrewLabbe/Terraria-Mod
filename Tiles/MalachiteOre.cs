@@ -32,7 +32,7 @@ namespace VoyagerMod.Tiles
 
 		// Example of how to enable the Biome Sight buff to highlight this tile. Biome Sight is technically intended to show "infected" tiles, so this example is purely for demonstration purposes.
 		public override bool IsTileBiomeSightable(int i, int j, ref Color sightColor) {
-			sightColor = Color.Blue;
+			sightColor = Color.Green;
 			return true;
 		}
 	}
@@ -79,7 +79,7 @@ namespace VoyagerMod.Tiles
 				int x = WorldGen.genRand.Next(0, Main.maxTilesX);
 
 				// WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
-				int y = WorldGen.genRand.Next((int)GenVars.worldSurfaceLow, Main.maxTilesY);
+				int y = WorldGen.genRand.Next((int)GenVars.rockLayer, Main.maxTilesY);
 
 				// Then, we call WorldGen.TileRunner with random "strength" and random "steps", as well as the Tile we wish to place.
 				// Feel free to experiment with strength and step to see the shape they generate.
