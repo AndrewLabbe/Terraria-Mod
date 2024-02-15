@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace VoyagerMod.Items
+namespace VoyagerMod.Content.Items
 {
 	public class BasicSword : ModItem
 	{
