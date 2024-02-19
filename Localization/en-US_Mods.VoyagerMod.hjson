@@ -10,6 +10,11 @@ Items: {
 		DisplayName: Malachite Ore
 		Tooltip: ""
 	}
+
+	MalachiteBreastplate: {
+		DisplayName: Malachite Breastplate
+		Tooltip: ""
+	}
 }
 
 Tiles.MalachiteOre.MapEntry: Malachite Ore
