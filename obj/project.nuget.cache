@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "G4DxCo8+SrUPTSKrDPm0zmCTLFLJqDoqul90370HNr8FYNGLAXWvVh/i7PTdeayVyEb5prDWFb44dus7FXGiUw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ggold\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ggold\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}
