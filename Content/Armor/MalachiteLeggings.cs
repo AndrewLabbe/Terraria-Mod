@@ -3,6 +3,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using VoyagerMod.Content.Items;
+using VoyagerMod.Content.Items.Placeable;
 
 namespace VoyagerMod.Content.Armor
 {
@@ -30,7 +31,7 @@ namespace VoyagerMod.Content.Armor
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<MalachiteOre>(28)
+				.AddIngredient<MalachiteBar>(18)
 				// .AddTile<Tiles.Furniture.ExampleWorkbench>()
 				.Register();
 		}
