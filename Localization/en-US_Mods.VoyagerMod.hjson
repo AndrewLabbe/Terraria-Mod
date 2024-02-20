@@ -32,6 +32,11 @@ Items: {
 		DisplayName: Malachite Hood
 		Tooltip: ""
 	}
+
+	MalachiteBar: {
+		DisplayName: Malachite Bar
+		Tooltip: ""
+	}
 }
 
 Tiles.MalachiteOre.MapEntry: Malachite Ore
