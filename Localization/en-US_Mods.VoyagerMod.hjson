@@ -20,6 +20,18 @@ Items: {
 		DisplayName: Malachite Leggings
 		Tooltip: ""
 	}
+
+	MalachiteHelmet: {
+		SetBonus: Mods.VoyagerMod.Items.MalachiteHelmet.SetBonus
+		DisplayName: Malachite Helmet
+		Tooltip: ""
+	}
+
+	MalachiteHood: {
+		SetBonus: Mods.VoyagerMod.Items.MalachiteHood.SetBonus
+		DisplayName: Malachite Hood
+		Tooltip: ""
+	}
 }
 
 Tiles.MalachiteOre.MapEntry: Malachite Ore
