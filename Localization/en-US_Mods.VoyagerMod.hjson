@@ -37,6 +37,19 @@ Items: {
 		DisplayName: Malachite Bar
 		Tooltip: ""
 	}
+
+	FluoriteOre: {
+		DisplayName: Fluorite Ore
+		Tooltip: ""
+	}
+
+	FluoriteBar: {
+		DisplayName: Fluorite Bar
+		Tooltip: ""
+	}
 }
 
-Tiles.MalachiteOre.MapEntry: Malachite Ore
+Tiles: {
+	MalachiteOre.MapEntry: Malachite Ore
+	FluoriteOre.MapEntry: Fluorite Ore
+}
