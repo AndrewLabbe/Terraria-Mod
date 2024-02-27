@@ -47,9 +47,16 @@ Items: {
 		DisplayName: Fluorite Bar
 		Tooltip: ""
 	}
+
+	MalachiteSword: {
+		DisplayName: Malachite Sword
+		Tooltip: ""
+	}
 }
 
 Tiles: {
 	MalachiteOre.MapEntry: Malachite Ore
 	FluoriteOre.MapEntry: Fluorite Ore
 }
+
+Projectiles.MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
