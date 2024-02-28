@@ -52,6 +52,11 @@ Items: {
 		DisplayName: Malachite Sword
 		Tooltip: ""
 	}
+
+	MalachiteStaff: {
+		DisplayName: Malachite Staff
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -59,4 +64,7 @@ Tiles: {
 	FluoriteOre.MapEntry: Fluorite Ore
 }
 
-Projectiles.MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
+Projectiles: {
+	MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
+	SparklingBall.DisplayName: Sparkling Ball
+}
