@@ -6,7 +6,7 @@ using VoyagerMod.Content.Items;
 
 namespace VoyagerMod.Content.Items.Placeable
 {
-	public class FluoriteBar : ModItem
+	public class FluoriteBar : ModItem // Blue Ore
 	{
 		public override void SetStaticDefaults() {
 			Item.ResearchUnlockCount = 25;

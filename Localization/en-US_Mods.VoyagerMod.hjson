@@ -52,6 +52,11 @@ Items: {
 		DisplayName: Malachite Sword
 		Tooltip: ""
 	}
+
+	MalachiteStaff: {
+		DisplayName: Malachite Staff
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -59,5 +64,9 @@ Tiles: {
 	FluoriteOre.MapEntry: Fluorite Ore
 }
 
-Projectiles.MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
 WorldGen.WorldGenTutorialOresPassMessage: Mods.VoyagerMod.WorldGen.WorldGenTutorialOresPassMessage
+
+Projectiles: {
+	MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
+	SparklingBall.DisplayName: Sparkling Ball
+}
