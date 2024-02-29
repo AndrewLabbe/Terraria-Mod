@@ -60,3 +60,4 @@ Tiles: {
 }
 
 Projectiles.MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
+WorldGen.WorldGenTutorialOresPassMessage: Mods.VoyagerMod.WorldGen.WorldGenTutorialOresPassMessage
