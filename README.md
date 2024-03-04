@@ -1,13 +1,13 @@
-## Voyager Mod
+# Voyager Mod
 
 By: Garrett Goldberg & Andrew Labbe
 SER375 Open-Source Programming Course
 Spring Semester 2024
 
-# What is this project?
+## What is this project?
 This project is a collaboration effort between two Junior Computer Science students to mod the ever-popular videogame, Terraria. This mod focuses on expanding the limitations of the current space layers in the base game. This mod features several new ores, items, enemies, and a whole new biome. 
 
-# How can I run this project?
+## How can I run this project?
 *Prerequisites: Must have Terraria and TModLoader already installed and run (at least once), both of which can be purchased from the Steam store.
 1. Open/Run tModLoader
 2. Click "Workshop"
