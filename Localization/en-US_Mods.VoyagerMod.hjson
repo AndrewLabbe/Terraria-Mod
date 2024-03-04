@@ -57,6 +57,16 @@ Items: {
 		DisplayName: Malachite Staff
 		Tooltip: ""
 	}
+
+	MalachiteBullet: {
+		DisplayName: Malachite Bullet
+		Tooltip: ""
+	}
+
+	MalachiteMinigun: {
+		DisplayName: Malachite Minigun
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -69,4 +79,5 @@ WorldGen.WorldGenTutorialOresPassMessage: Mods.VoyagerMod.WorldGen.WorldGenTutor
 Projectiles: {
 	MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
 	SparklingBall.DisplayName: Sparkling Ball
+	MalachiteBullet.DisplayName: Malachite Bullet
 }
