@@ -67,6 +67,11 @@ Items: {
 		DisplayName: Malachite Minigun
 		Tooltip: ""
 	}
+
+	MalachiteShield: {
+		DisplayName: Malachite Shield
+		Tooltip: ""
+	}
 }
 
 Tiles: {
