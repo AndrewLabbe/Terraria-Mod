@@ -27,8 +27,8 @@ namespace VoyagerMod.Content.Items
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<MalachiteBar>()
-				// .AddTile<Tiles.Furniture.ExampleWorkbench>()
+				.AddIngredient<MalachiteBar>(30)
+				.AddTile(TileID.Anvils)
 				.Register();
 		}
 

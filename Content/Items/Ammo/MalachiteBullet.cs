@@ -32,7 +32,7 @@ namespace VoyagerMod.Content.Items.Ammo
 		public override void AddRecipes() {
 			CreateRecipe()
 				.AddIngredient<MalachiteBar>()
-				// .AddTile<ExampleWorkbench>()
+				.AddTile(TileID.WorkBenches)
 				.Register();
 		}
 	}

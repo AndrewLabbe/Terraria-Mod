@@ -34,7 +34,7 @@ namespace VoyagerMod.Content.Armor
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe().AddIngredient<MalachiteBar>(24)
-				// .AddTile<Tiles.Furniture.ExampleWorkbench>()
+				.AddTile(TileID.Anvils)
 				.Register();
 		}
 	}

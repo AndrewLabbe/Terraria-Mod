@@ -63,8 +63,7 @@ namespace VoyagerMod.Content.Items
 		public override void AddRecipes() {
 			CreateRecipe()
 				.AddIngredient<MalachiteBar>(16)
-                //.AddIngredient<Fallen.Star>(10)
-				//.AddTile<Tiles.Furniture.ExampleWorkbench>()
+				.AddTile(TileID.Anvils)
 				.Register();
 		}
 	}
