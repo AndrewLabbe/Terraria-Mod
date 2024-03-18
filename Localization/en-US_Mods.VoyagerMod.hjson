@@ -58,18 +58,8 @@ Items: {
 		Tooltip: ""
 	}
 
-	MalachiteBullet: {
-		DisplayName: Malachite Bullet
-		Tooltip: ""
-	}
-
-	MalachiteMinigun: {
-		DisplayName: Malachite Minigun
-		Tooltip: ""
-	}
-
-	MalachiteShield: {
-		DisplayName: Malachite Shield
+	SpaceDirt: {
+		DisplayName: Space Dirt
 		Tooltip: ""
 	}
 }
@@ -79,10 +69,25 @@ Tiles: {
 	FluoriteOre.MapEntry: Fluorite Ore
 }
 
-WorldGen.WorldGenTutorialOresPassMessage: Mods.VoyagerMod.WorldGen.WorldGenTutorialOresPassMessage
+WorldGen: {
+	WorldGenTutorialOresPassMessage: Mods.VoyagerMod.WorldGen.WorldGenTutorialOresPassMessage
+	VoyagerModBiomePassMessage: Mods.VoyagerMod.WorldGen.VoyagerModBiomePassMessage
+}
 
 Projectiles: {
 	MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
 	SparklingBall.DisplayName: Sparkling Ball
 	MalachiteBullet.DisplayName: Malachite Bullet
+}
+
+Biomes: {
+	VoyagerBiome: {
+		DisplayName: Voyager Biome
+		TownNPCDialogueName: the Voyager Biome
+	}
+
+	SpaceBiome: {
+		DisplayName: Space Biome
+		TownNPCDialogueName: the Space Biome
+	}
 }
