@@ -1,13 +1,13 @@
-# This file will automatically update with entries for new content after a build and reload
-
 Items: {
-	BasicSword: {
-		DisplayName: Basic Sword
+	MalachiteHelmet: {
+		SetBonus: Mods.VoyagerMod.Items.MalachiteHelmet.SetBonus
+		DisplayName: Malachite Helmet
 		Tooltip: ""
 	}
 
-	MalachiteOre: {
-		DisplayName: Malachite Ore
+	MalachiteHood: {
+		SetBonus: Mods.VoyagerMod.Items.MalachiteHood.SetBonus
+		DisplayName: Malachite Hood
 		Tooltip: ""
 	}
 
@@ -21,48 +21,6 @@ Items: {
 		Tooltip: ""
 	}
 
-	MalachiteHelmet: {
-		SetBonus: Mods.VoyagerMod.Items.MalachiteHelmet.SetBonus
-		DisplayName: Malachite Helmet
-		Tooltip: ""
-	}
-
-	MalachiteHood: {
-		SetBonus: Mods.VoyagerMod.Items.MalachiteHood.SetBonus
-		DisplayName: Malachite Hood
-		Tooltip: ""
-	}
-
-	MalachiteBar: {
-		DisplayName: Malachite Bar
-		Tooltip: ""
-	}
-
-	FluoriteOre: {
-		DisplayName: Fluorite Ore
-		Tooltip: ""
-	}
-
-	FluoriteBar: {
-		DisplayName: Fluorite Bar
-		Tooltip: ""
-	}
-
-	MalachiteSword: {
-		DisplayName: Malachite Sword
-		Tooltip: ""
-	}
-
-	MalachiteStaff: {
-		DisplayName: Malachite Staff
-		Tooltip: ""
-	}
-
-	SpaceDirt: {
-		DisplayName: Space Dirt
-		Tooltip: ""
-	}
-
 	MalachiteShield: {
 		DisplayName: Malachite Shield
 		Tooltip: ""
@@ -73,36 +31,71 @@ Items: {
 		Tooltip: ""
 	}
 
+	BasicSword: {
+		DisplayName: Basic Sword
+		Tooltip: ""
+	}
+
+	FluoriteOre: {
+		DisplayName: Fluorite Ore
+		Tooltip: ""
+	}
+
 	MalachiteMinigun: {
 		DisplayName: Malachite Minigun
+		Tooltip: ""
+	}
+
+	MalachiteOre: {
+		DisplayName: Malachite Ore
+		Tooltip: ""
+	}
+
+	MalachiteStaff: {
+		DisplayName: Malachite Staff
+		Tooltip: ""
+	}
+
+	MalachiteSword: {
+		DisplayName: Malachite Sword
+		Tooltip: ""
+	}
+
+	FluoriteBar: {
+		DisplayName: Fluorite Bar
+		Tooltip: ""
+	}
+
+	MalachiteBar: {
+		DisplayName: Malachite Bar
+		Tooltip: ""
+	}
+
+	SpaceDirt: {
+		DisplayName: Space Dirt
 		Tooltip: ""
 	}
 }
 
 Tiles: {
-	MalachiteOre.MapEntry: Malachite Ore
 	FluoriteOre.MapEntry: Fluorite Ore
-}
-
-WorldGen: {
-	WorldGenTutorialOresPassMessage: Mods.VoyagerMod.WorldGen.WorldGenTutorialOresPassMessage
-	VoyagerModBiomePassMessage: Mods.VoyagerMod.WorldGen.VoyagerModBiomePassMessage
-}
-
-Projectiles: {
-	MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
-	SparklingBall.DisplayName: Sparkling Ball
-	MalachiteBullet.DisplayName: Malachite Bullet
+	MalachiteOre.MapEntry: Malachite Ore
 }
 
 Biomes: {
-	VoyagerBiome: {
-		DisplayName: Voyager Biome
-		TownNPCDialogueName: the Voyager Biome
-	}
-
 	SpaceBiome: {
 		DisplayName: Space Biome
 		TownNPCDialogueName: the Space Biome
 	}
+}
+
+WorldGen: {
+	VoyagerModBiomePassMessage: Mods.VoyagerMod.WorldGen.VoyagerModBiomePassMessage
+	WorldGenTutorialOresPassMessage: Mods.VoyagerMod.WorldGen.WorldGenTutorialOresPassMessage
+}
+
+Projectiles: {
+	MalachiteBullet.DisplayName: Malachite Bullet
+	MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
+	SparklingBall.DisplayName: Sparkling Ball
 }
