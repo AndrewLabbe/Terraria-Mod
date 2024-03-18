@@ -8,27 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ggold\\.nuget\\packages\\": {}
+    "C:\\Users\\labbe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ggold\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj",
+      "projectUniqueName": "c:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj",
       "projectName": "VoyagerMod",
-      "projectPath": "C:\\Users\\ggold\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj",
-      "packagesPath": "C:\\Users\\ggold\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ggold\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\obj\\",
+      "projectPath": "c:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj",
+      "packagesPath": "C:\\Users\\labbe\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ggold\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\labbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "net6.0": {
@@ -61,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

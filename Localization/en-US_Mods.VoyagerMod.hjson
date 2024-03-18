@@ -62,6 +62,21 @@ Items: {
 		DisplayName: Space Dirt
 		Tooltip: ""
 	}
+
+	MalachiteShield: {
+		DisplayName: Malachite Shield
+		Tooltip: ""
+	}
+
+	MalachiteBullet: {
+		DisplayName: Malachite Bullet
+		Tooltip: ""
+	}
+
+	MalachiteMinigun: {
+		DisplayName: Malachite Minigun
+		Tooltip: ""
+	}
 }
 
 Tiles: {
