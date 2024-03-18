@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj": {}
+    "C:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj": {}
   },
   "projects": {
-    "c:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj": {
+    "C:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj",
+        "projectUniqueName": "C:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj",
         "projectName": "VoyagerMod",
-        "projectPath": "c:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj",
+        "projectPath": "C:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\VoyagerMod.csproj",
         "packagesPath": "C:\\Users\\labbe\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\obj\\",
+        "outputPath": "C:\\Users\\labbe\\OneDrive\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\VoyagerMod\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\labbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
