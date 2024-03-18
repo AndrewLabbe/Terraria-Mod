@@ -26,7 +26,7 @@ namespace VoyagerMod.Content.Tiles
 
 			DustType = 84;
 			HitSound = SoundID.Tink;
-			MinPick = 65;
+			MinPick = 200;
 		}
 
 		// Example of how to enable the Biome Sight buff to highlight this tile. Biome Sight is technically intended to show "infected" tiles, so this example is purely for demonstration purposes.
