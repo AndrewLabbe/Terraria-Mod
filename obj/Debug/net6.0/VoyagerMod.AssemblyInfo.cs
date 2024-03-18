@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VoyagerMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cefdadca243b9aba8772690d2fb0ea3cea86ec6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5c39143caed62c1b7ed356bd64b2ea506fddace")]
 [assembly: System.Reflection.AssemblyProductAttribute("VoyagerMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VoyagerMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
