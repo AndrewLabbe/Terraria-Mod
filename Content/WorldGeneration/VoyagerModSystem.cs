@@ -24,10 +24,11 @@ namespace VoyagerMod.Content.WorldGeneration
 		public override void ModifyWorldGenTasks(List<GenPass> tasks, ref double totalWeight) {
 			// 5. We use FindIndex to locate the index of the vanilla world generation task called "Shinies". This ensures our code runs at the correct step.
 			int ShiniesIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Spawn Point"));
+			GenPass SkyIslandPass = tasks.Find(genpass => genpass.Name.Equals("Floating Islands"));
+			SkyIslandPass.Disable();
 			if (ShiniesIndex != -1) {
 				// 6. We register our world generation pass by passing in an instance of our custom GenPass class below. The GenPass class will execute our world generation code.
 				tasks.Insert(ShiniesIndex + 1, new VoyagerModBiomePass("World Gen Space Biome", 100f));
-				//tasks.Remove();\
 			}
 		}
 	}

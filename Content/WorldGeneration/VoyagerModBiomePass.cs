@@ -27,6 +27,8 @@ namespace VoyagerMod.Content.WorldGeneration
 					WorldGen.PlaceTile(i, j, ModContent.TileType<SpaceDirt>(), false, true);
 				}
 			}
+
+			GenVars.structures.AddProtectedStructure(new Microsoft.Xna.Framework.Rectangle(0, 0, Main.maxTilesX, 50));
 			
 			/*
 			if(Main.tile[0, 100].type == TileID.ColbaltBrick){
