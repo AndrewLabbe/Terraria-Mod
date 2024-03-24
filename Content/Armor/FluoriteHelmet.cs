@@ -11,7 +11,7 @@ namespace VoyagerMod.Content.Armor
 	// The AutoloadEquip attribute automatically attaches an equip texture to this item.
 	// Providing the EquipType.Head value here will result in TML expecting a X_Head.png file to be placed next to the item's main texture.
 	[AutoloadEquip(EquipType.Head)]
-	public class AstroniumHelmet : ModItem
+	public class FluoriteHelmet : ModItem
 	{
 		public static readonly int AdditiveGenericDamageBonus = 20;
 
@@ -37,7 +37,7 @@ namespace VoyagerMod.Content.Armor
 
 		// IsArmorSet determines what armor pieces are needed for the setbonus to take effect
 		public override bool IsArmorSet(Item head, Item body, Item legs) {
-			return body.type == ModContent.ItemType<AstroniumBreastplate>() && legs.type == ModContent.ItemType<AstroniumLeggings>();
+			return body.type == ModContent.ItemType<FluoriteBreastplate>() && legs.type == ModContent.ItemType<FluoriteLeggings>();
 		}
 
 		// UpdateArmorSet allows you to give set bonuses to the armor.
@@ -49,7 +49,7 @@ namespace VoyagerMod.Content.Armor
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<AstroniumBar>(15)
+				.AddIngredient<FluoriteBar>(15)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

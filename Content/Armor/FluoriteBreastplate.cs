@@ -10,7 +10,7 @@ namespace VoyagerMod.Content.Armor
 	// The AutoloadEquip attribute automatically attaches an equip texture to this item.
 	// Providing the EquipType.Body value here will result in TML expecting X_Arms.png, X_Body.png and X_FemaleBody.png sprite-sheet files to be placed next to the item's main texture.
 	[AutoloadEquip(EquipType.Body)]
-	public class AstroniumBreastplate : ModItem
+	public class FluoriteBreastplate : ModItem
 	{
 		public static int MaxManaIncrease = 20;
 		public static int MaxMinionIncrease = 1;
@@ -33,7 +33,7 @@ namespace VoyagerMod.Content.Armor
 
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
-			CreateRecipe().AddIngredient<AstroniumBar>(24)
+			CreateRecipe().AddIngredient<FluoriteBar>(24)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}
