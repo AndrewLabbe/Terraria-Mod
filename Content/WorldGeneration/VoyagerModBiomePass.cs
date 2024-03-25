@@ -23,18 +23,48 @@ namespace VoyagerMod.Content.WorldGeneration
 			// 11. In a small world, this math results in 4200 * 1200 * 0.00002, which is about 100. This means that we'll run the code inside the for loop 100 times. This is the amount Crimtane or Demonite will spawn. Since we are scaling by both dimensions of the world size, the amount spawned will adjust automatically to different world sizes for a consistent distribution of ores.
 
 			for (int i = 0; i < Main.maxTilesX; i++) {
-				for(int j = 80; j < 130; j++){
+				for(int j = 90; j < 120; j++){
+					int strength = WorldGen.genRand.Next(15, 25);
+					int steps = WorldGen.genRand.Next(15, 25); 
 					WorldGen.PlaceTile(i, j, ModContent.TileType<SpaceDirt>(), false, true);
+					WorldGen.TileRunner(i, j, strength, steps, ModContent.TileType<SpaceDirt>(), true);
 				}
 			}
 
-			GenVars.structures.AddProtectedStructure(new Microsoft.Xna.Framework.Rectangle(0, 0, Main.maxTilesX, 50));
-			
-			/*
-			if(Main.tile[0, 100].type == TileID.ColbaltBrick){
-				Debug.WriteLine("");
+			//malachite ore
+			for (int k = 0; k < (int)((Main.maxTilesX * Main.maxTilesY) * 6E-05); k++) {
+				// The inside of this for loop corresponds to one single splotch of our Ore.
+				// First, we randomly choose any coordinate in the world by choosing a random x and y value.
+				int x = WorldGen.genRand.Next(0, Main.maxTilesX);
+				int y = WorldGen.genRand.Next(80, 130); // WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
+
+				// Then, we call WorldGen.TileRunner with random "strength" and random "steps", as well as the Tile we wish to place. Feel free to experiment with strength and step to see the shape they generate.
+				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<MalachiteOre>());
 			}
-			*/
+
+			//fluorite ore
+			for (int k = 0; k < (int)((Main.maxTilesX * Main.maxTilesY) * 6E-05); k++) {
+				// The inside of this for loop corresponds to one single splotch of our Ore.
+				// First, we randomly choose any coordinate in the world by choosing a random x and y value.
+				int x = WorldGen.genRand.Next(0, Main.maxTilesX);
+				int y = WorldGen.genRand.Next(80, 130); // WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
+
+				// Then, we call WorldGen.TileRunner with random "strength" and random "steps", as well as the Tile we wish to place. Feel free to experiment with strength and step to see the shape they generate.
+				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<FluoriteOre>());
+			}
+
+			//astronium ore
+			for (int k = 0; k < (int)((Main.maxTilesX * Main.maxTilesY) * 6E-05); k++) {
+				// The inside of this for loop corresponds to one single splotch of our Ore.
+				// First, we randomly choose any coordinate in the world by choosing a random x and y value.
+				int x = WorldGen.genRand.Next(0, Main.maxTilesX);
+				int y = WorldGen.genRand.Next(80, 130); // WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
+
+				// Then, we call WorldGen.TileRunner with random "strength" and random "steps", as well as the Tile we wish to place. Feel free to experiment with strength and step to see the shape they generate.
+				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<AstroniumOre>());
+			}
+
+			GenVars.structures.AddProtectedStructure(new Microsoft.Xna.Framework.Rectangle(0, 0, Main.maxTilesX, 50));
 		}
 	}
 }
