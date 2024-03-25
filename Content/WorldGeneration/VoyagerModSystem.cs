@@ -23,7 +23,7 @@ namespace VoyagerMod.Content.WorldGeneration
 		// 4. We use the ModifyWorldGenTasks method to tell the game the order that our world generation code should run
 		public override void ModifyWorldGenTasks(List<GenPass> tasks, ref double totalWeight) {
 			// 5. We use FindIndex to locate the index of the vanilla world generation task called "Shinies". This ensures our code runs at the correct step.
-			int ShiniesIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Spawn Point"));
+			int ShiniesIndex = tasks.FindIndex(genpass => genpass.Name.Equals("Cactus, Palm Trees, & Coral"));
 			GenPass SkyIslandPass = tasks.Find(genpass => genpass.Name.Equals("Floating Islands"));
 			SkyIslandPass.Disable();
 			if (ShiniesIndex != -1) {
