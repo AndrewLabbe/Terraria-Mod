@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
+using VoyagerMod.Content.Tiles;
 
 namespace VoyagerMod.Content.Items.Placeable
 {
@@ -31,7 +32,7 @@ namespace VoyagerMod.Content.Items.Placeable
                 AddIngredient<FluoriteBar>(3).
                 AddIngredient<AstroniumBar>(3).
                 AddIngredient<MalachiteBar>(3).
-                // AddTile(TileID.LunarCraftingStation).
+                AddTile<TemporalAltar>().
                 Register();
         }
     }
