@@ -1,7 +1,6 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using VoyagerMod.Content.Items.Ammo;
 using VoyagerMod.Content.Items.Placeable;
 using VoyagerMod.Content.Projectiles;
 
@@ -23,7 +22,7 @@ namespace VoyagerMod.Content.Items.Ammo
 			Item.knockBack = 1.5f;
 			Item.value = 10;
 			Item.rare = ItemRarityID.Green;
-			Item.shoot = ModContent.ProjectileType<Projectiles.MalachiteBullet>(); // The projectile that weapons fire when using this item as ammunition.
+			Item.shoot = ModContent.ProjectileType<Content.Projectiles.MalachiteBullet>(); // The projectile that weapons fire when using this item as ammunition.
 			Item.shootSpeed = 16f; // The speed of the projectile.
 			Item.ammo = AmmoID.Bullet; // The ammo class this ammo belongs to.
 		}
