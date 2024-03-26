@@ -7,7 +7,7 @@ using VoyagerMod.Content.Utilities;
 using VoyagerMod.Content.VoyPlayer;
 using static Terraria.ModLoader.ModContent;
 
-namespace VoyagerMod
+namespace VoyagerMod.Content.Utilities
 {
     public static partial class VoyagerAIUtils
     {

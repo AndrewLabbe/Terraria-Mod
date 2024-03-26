@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace VoyagerMod
+namespace VoyagerMod.Content.Utilities
 {
     public static partial class VoyagerUtils
     {
