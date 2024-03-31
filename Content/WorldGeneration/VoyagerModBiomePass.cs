@@ -22,13 +22,58 @@ namespace VoyagerMod.Content.WorldGeneration
 			// 10. Here we use a for loop to run the code inside the loop many times. This for loop scales to the product of Main.maxTilesX, Main.maxTilesY, and 2E-05. 2E-05 is scientific notation and equal to 0.00002. Sometimes scientific notation is easier to read when dealing with a lot of zeros.
 			// 11. In a small world, this math results in 4200 * 1200 * 0.00002, which is about 100. This means that we'll run the code inside the for loop 100 times. This is the amount Crimtane or Demonite will spawn. Since we are scaling by both dimensions of the world size, the amount spawned will adjust automatically to different world sizes for a consistent distribution of ores.
 
+			//initial "rectangle" biome
 			for (int i = 0; i < Main.maxTilesX; i++) {
-				for(int j = 90; j < 120; j++){
-					int strength = WorldGen.genRand.Next(15, 25);
-					int steps = WorldGen.genRand.Next(15, 25); 
-					WorldGen.PlaceTile(i, j, ModContent.TileType<SpaceDirt>(), false, true);
-					WorldGen.TileRunner(i, j, strength, steps, ModContent.TileType<SpaceDirt>(), true);
+				for(int j = 80; j < 135; j++){
+					WorldGen.PlaceTile(i, j, ModContent.TileType<SpaceDirt>(), true);
 				}
+			}
+
+			//shaping biome bottom
+			for (int i = 0; i < Main.maxTilesX; i+=15) {
+				int strength = WorldGen.genRand.Next(5, 10);
+				int steps = WorldGen.genRand.Next(50, 60); 
+				WorldGen.TileRunner(i, 135, strength, steps, ModContent.TileType<SpaceDirt>(), true, 1);
+			}
+			for (int i = 0; i < Main.maxTilesX; i+=15) {
+				int strength = WorldGen.genRand.Next(5, 10);
+				int steps = WorldGen.genRand.Next(50, 60); 
+				WorldGen.TileRunner(i, 135, strength, steps, ModContent.TileType<SpaceDirt>(), true, -1);
+			}
+			for (int i = 0; i < Main.maxTilesX; i++) {
+				for(int j = 135; j < 140; j++){
+					WorldGen.PlaceTile(i, j, ModContent.TileType<SpaceDirt>(), true);
+				}
+			}
+			for(int i = 0; i < Main.maxTilesX; i++){
+				int randLength = WorldGen.genRand.Next(5, 10);
+				for(int c = 0; c < randLength; c++){
+					WorldGen.PlaceTile(i+c, 140, ModContent.TileType<SpaceDirt>(), true);
+				}
+				i+=randLength+WorldGen.genRand.Next(0, 7);
+			}
+
+			//Adding "divots" into the biome by removing slabs of terrain
+			int numDivots = WorldGen.genRand.Next(20, 25);
+			for (int i = 0; i < numDivots; i++){
+    			int randLength = WorldGen.genRand.Next(5, Main.maxTilesX / numDivots);
+   			 	int startX = Main.maxTilesX / numDivots * i;
+
+    			int startY = 80;
+    			int endY = WorldGen.genRand.Next(100, 115);
+
+    			// Adjust startY and endY if you want divots only in a certain area of the world
+				for (int y = startY; y < endY; y++){
+					for (int x = startX; x < startX+randLength; x++){
+						WorldGen.KillTile(x, y, false, false, false);
+    				}	
+					if(startX >= startX+randLength){}
+					else{
+						int val = WorldGen.genRand.Next(0, 3);
+						startX += val;
+						randLength -= WorldGen.genRand.Next(val, val+3);
+					}
+        		}
 			}
 
 			//malachite ore
