@@ -5,6 +5,7 @@ using Terraria.WorldBuilding;
 using Terraria.IO;
 using VoyagerMod.Content.Tiles;
 using Terraria.ModLoader;
+using VoyagerMod.Content.Tiles.Plants;
 
 namespace VoyagerMod.Content.WorldGeneration
 {
@@ -108,6 +109,10 @@ namespace VoyagerMod.Content.WorldGeneration
 				// Then, we call WorldGen.TileRunner with random "strength" and random "steps", as well as the Tile we wish to place. Feel free to experiment with strength and step to see the shape they generate.
 				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<AstroniumOre>());
 			}
+
+			//Space Trees
+			WorldGen.AddTrees();
+
 
 			GenVars.structures.AddProtectedStructure(new Microsoft.Xna.Framework.Rectangle(0, 0, Main.maxTilesX, 50));
 		}
