@@ -17,7 +17,7 @@ namespace VoyagerMod.Content.WorldGeneration
 		public static LocalizedText VoyagerModBiomePassMessage { get; private set; }
 
 		public override void SetStaticDefaults() {
-			VoyagerModBiomePassMessage = Language.GetOrRegister(Mod.GetLocalizationKey($"WorldGen.{nameof(VoyagerModBiomePassMessage)}"));
+			VoyagerModBiomePassMessage = Language.GetOrRegister(Mod.GetLocalizationKey("Generating a Bigger Space..."));
 		}
 
 		// 4. We use the ModifyWorldGenTasks method to tell the game the order that our world generation code should run

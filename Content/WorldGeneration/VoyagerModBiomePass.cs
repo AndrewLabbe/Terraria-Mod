@@ -5,7 +5,7 @@ using Terraria.WorldBuilding;
 using Terraria.IO;
 using VoyagerMod.Content.Tiles;
 using Terraria.ModLoader;
-using VoyagerMod.Content.Tiles.Plants;
+using Microsoft.Xna.Framework;
 
 namespace VoyagerMod.Content.WorldGeneration
 {
@@ -27,6 +27,25 @@ namespace VoyagerMod.Content.WorldGeneration
 			for (int i = 0; i < Main.maxTilesX; i++) {
 				for(int j = 80; j < 135; j++){
 					WorldGen.PlaceTile(i, j, ModContent.TileType<SpaceDirt>(), true);
+				}
+			}
+
+			//spawning space stone
+			for (int k = 0; k < (int)((Main.maxTilesX * Main.maxTilesY) * 9E-05); k++) {
+				int x = WorldGen.genRand.Next(12, Main.maxTilesX-12);
+				int y = WorldGen.genRand.Next(80, 138); 
+
+				int randW = WorldGen.genRand.Next(4, 10);
+				int randH = WorldGen.genRand.Next(4, 10);
+
+				Point point = new Point(x, y);
+				WorldUtils.Gen(point, new Shapes.Circle(randW, randH), new Actions.SetTile((ushort)ModContent.TileType<SpaceStone>()));
+			}
+
+			//removing excess stone
+			for (int i = 0; i < Main.maxTilesX; i++) {
+				for(int j = 50; j <= 79; j++){
+					WorldGen.KillTile(i, j, false, false, false);
 				}
 			}
 
