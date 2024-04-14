@@ -98,6 +98,11 @@ Items: {
 				DisplayName: Fluorite Trident
 				Tooltip: ""
 			}
+
+			InterstellarSword: {
+				DisplayName: Interstellar Sword
+				Tooltip: ""
+			}
 		}
 
 		Magic: {
@@ -232,6 +237,10 @@ Projectiles: {
 	Melee: {
 		FluoriteTridentProj.DisplayName: Fluorite Trident Proj
 		FluoriteTridentWhirlpool.DisplayName: Fluorite Trident Whirlpool
+		InterstellarSwordHoming.DisplayName: Interstellar Sword Homing
+		InterstellarSwordMain.DisplayName: Interstellar Sword Main
+		InterstellarSwordSide.DisplayName: Interstellar Sword Side
+		InterstellarSwordSplit.DisplayName: Interstellar Sword Split
 	}
 
 	MalachiteBullet.DisplayName: Malachite Bullet

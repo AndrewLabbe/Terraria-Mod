@@ -2,6 +2,7 @@ using VoyagerMod.Content.Projectiles;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
+using VoyagerMod.Content.Items.Placeable;
 
 namespace VoyagerMod.Content.Items
 {
@@ -38,6 +39,7 @@ namespace VoyagerMod.Content.Items
                 AddIngredient(ItemID.RainbowRod).
                 AddIngredient(ItemID.LargeRuby).
                 AddIngredient(ItemID.CrystalShard).
+                AddIngredient<AstroniumBar>(14).
                 AddTile(TileID.Anvils).
                 Register();
         }
