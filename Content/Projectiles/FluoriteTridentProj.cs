@@ -20,9 +20,11 @@ namespace VoyagerMod.Content.Projectiles
             Projectile.hostile = false;
             Projectile.tileCollide = false;
             Projectile.ignoreWater = true;
-            Projectile.penetrate = -1;
+            Projectile.penetrate = 3;
             Projectile.ownerHitCheck = true;
             Projectile.hide = true;
+            Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = 2; // 1 hit per npc max
         }
 
         public override float InitialSpeed => 3f;

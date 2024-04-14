@@ -26,7 +26,7 @@ namespace VoyagerMod.Content.Items
 			Item.UseSound = SoundID.Item20;
 
 			// Set damage and knockBack
-			Item.SetWeaponValues(20, 5);
+			Item.SetWeaponValues(32, 5);
 
 			// Set rarity and value
 			Item.SetShopValues(ItemRarityColor.Green2, 10000);
@@ -35,6 +35,7 @@ namespace VoyagerMod.Content.Items
 		public override void AddRecipes() {
 			CreateRecipe()
 				.AddIngredient<MalachiteBar>(16)
+				.AddIngredient(ItemID.FallenStar, 12)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

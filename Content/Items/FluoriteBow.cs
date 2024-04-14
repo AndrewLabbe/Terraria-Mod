@@ -14,17 +14,17 @@ namespace VoyagerMod.Content.Items
         public new string LocalizationCategory => "Items.Weapons.Ranged";
         public override void SetDefaults()
         {
-            Item.damage = 37;
+            Item.damage = 56;
             Item.DamageType = DamageClass.Ranged;
             Item.width = 26;
             Item.height = 70;
-            Item.useTime = 25;
+            Item.useTime = 8;
             Item.useAnimation = 25;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.noMelee = true;
             Item.knockBack = 4f;
             Item.value = 5;
-            Item.rare = ItemRarityID.Pink;
+            Item.rare = ItemRarityID.Cyan;
             Item.UseSound = SoundID.Item5;
             Item.autoReuse = true;
             Item.shoot = ModContent.ProjectileType<FluoriteArrow>();

@@ -61,7 +61,7 @@ namespace VoyagerMod.Content.Tiles.Plants
 			return false;
 		}
 		public override int TreeLeaf() {
-			return ModContent.TileType<SpaceDirt>();
+			return TileID.LeafBlock;
 		}
 	}
 }

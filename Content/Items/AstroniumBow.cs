@@ -14,7 +14,7 @@ namespace VoyagerMod.Content.Items
             Item.DamageType = DamageClass.Ranged;
             Item.width = 38;
             Item.height = 78;
-            Item.useTime = 6;
+            Item.useTime = 4;
             Item.useAnimation = 18;
             Item.reuseDelay = 18;
             Item.useLimitPerAnimation = 3;

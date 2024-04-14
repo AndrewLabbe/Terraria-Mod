@@ -14,8 +14,10 @@ namespace VoyagerMod.Content.Projectiles
 			Projectile.height = 16;
 			Projectile.friendly = true;
 			Projectile.DamageType = DamageClass.Magic;
-			Projectile.penetrate = 3;
+			Projectile.penetrate = -1;
 			Projectile.timeLeft = 600;
+			Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = 10; // 1 hit per npc max
 		}
 
 		public override void AI() {
