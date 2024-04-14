@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using Terraria;
 using Terraria.GameContent;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace VoyagerMod.Content.Tiles.Plants
@@ -59,7 +60,6 @@ namespace VoyagerMod.Content.Tiles.Plants
 			Item.NewItem(WorldGen.GetItemSource_FromTreeShake(x, y), new Vector2(x, y) * 16, ModContent.ItemType<Items.Placeable.SpaceDirt>());
 			return false;
 		}
-
 		public override int TreeLeaf() {
 			return ModContent.TileType<SpaceDirt>();
 		}
