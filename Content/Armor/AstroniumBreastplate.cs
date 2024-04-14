@@ -13,8 +13,8 @@ namespace VoyagerMod.Content.Armor
 	public class AstroniumBreastplate : ModItem
 	{
 		public static readonly int ConsumeAmmo = 20;
-		public static readonly int ManaCostReductionPercent = 50;
-		public static int MaxManaIncrease = 100;
+		public static readonly int ManaCostReductionPercent = 20;
+		public static int MaxManaIncrease = 60;
 		public static int MeleeSpeedIncrease = 20;
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(ConsumeAmmo, ManaCostReductionPercent, MaxManaIncrease, MeleeSpeedIncrease);
 
