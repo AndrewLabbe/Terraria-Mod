@@ -1,180 +1,282 @@
+CommonItemTooltip: {
+	IncreasesMeleeDamageBy: "{0}% melee damage increase"
+	IncreasesAllDamageBy: "{0}% damage increase"
+	IncreasesMeleeSpeedBy: "{0}% melee speed increase"
+	IncreasesMaxManaBy: increases maximum mana by {0}
+	ReducesManaCostBy: "{0}% reduced mana cost"
+	ReducesAmmoConsumptionBy: "{0}% chance to not consume ammo"
+	IncreasesCritChanceBy: "{0}% critical strike chance"
+	IncreasesMovementSpeedBy: "{0}% movement speed increase"
+}
+
 Items: {
 	AstroniumHelmet: {
-		SetBonus: Mods.VoyagerMod.Items.AstroniumHelmet.SetBonus
 		DisplayName: Astronium Helmet
-		Tooltip: ""
+		Tooltip:
+			'''
+			{$CommonItemTooltip.IncreasesCritChanceBy}
+			Helmet infused with purple space metal
+			'''
+		SetBonus:
+			'''
+			Immunity to 'On Fire!'
+			{$CommonItemTooltip.IncreasesAllDamageBy}
+			'''
 	}
 
 	FluoriteHelmet: {
-		SetBonus: Mods.VoyagerMod.Items.FluoriteHelmet.SetBonus
 		DisplayName: Fluorite Helmet
-		Tooltip: ""
+		Tooltip:
+			'''
+			{$CommonItemTooltip.IncreasesCritChanceBy}
+			Helmet infused with blue space metal
+			'''
+		SetBonus:
+			'''
+			Immunity to 'On Fire!'
+			{$CommonItemTooltip.IncreasesAllDamageBy}
+			'''
 	}
 
 	MalachiteHelmet: {
-		SetBonus: Mods.VoyagerMod.Items.MalachiteHelmet.SetBonus
 		DisplayName: Malachite Helmet
-		Tooltip: ""
-	}
-
-	MalachiteHood: {
-		SetBonus: Mods.VoyagerMod.Items.MalachiteHood.SetBonus
-		DisplayName: Malachite Hood
-		Tooltip: ""
+		Tooltip:
+			'''
+			{$CommonItemTooltip.IncreasesCritChanceBy}
+			Helmet infused with green space metal
+			'''
+		SetBonus:
+			'''
+			Immunity to 'On Fire!'
+			{$CommonItemTooltip.IncreasesAllDamageBy}
+			'''
 	}
 
 	AstroniumBreastplate: {
 		DisplayName: Astronium Breastplate
-		Tooltip: ""
+		Tooltip:
+			'''
+			{$CommonItemTooltip.ReducesAmmoConsumptionBy}
+			{$CommonItemTooltip.ReducesManaCostBy@1}
+			{$CommonItemTooltip.IncreasesMaxManaBy@2}
+			{$CommonItemTooltip.IncreasesMeleeSpeedBy@3}
+			Breastplate infused with purple space metal
+			'''
+		SetBonus:
+			'''
+			Immunity to 'On Fire!'
+			{$CommonItemTooltip.IncreasesAllDamageBy}
+			'''
 	}
 
 	AstroniumLeggings: {
 		DisplayName: Astronium Leggings
-		Tooltip: ""
+		Tooltip:
+			'''
+			{$CommonItemTooltip.IncreasesMovementSpeedBy}
+			Pants infused with purple space metal
+			'''
+		SetBonus:
+			'''
+			Immunity to 'On Fire!'
+			{$CommonItemTooltip.IncreasesAllDamageBy}
+			'''
 	}
 
 	FluoriteBreastplate: {
 		DisplayName: Fluorite Breastplate
-		Tooltip: ""
+		Tooltip:
+			'''
+			{$CommonItemTooltip.ReducesAmmoConsumptionBy}
+			{$CommonItemTooltip.ReducesManaCostBy@1}
+			{$CommonItemTooltip.IncreasesMaxManaBy@2}
+			{$CommonItemTooltip.IncreasesMeleeSpeedBy@3}
+			Breastplate infused with blue space metal
+			'''
+		SetBonus:
+			'''
+			Immunity to 'On Fire!'
+			{$CommonItemTooltip.IncreasesAllDamageBy}
+			'''
 	}
 
 	FluoriteLeggings: {
 		DisplayName: Fluorite Leggings
-		Tooltip: ""
+		Tooltip:
+			'''
+			{$CommonItemTooltip.IncreasesMovementSpeedBy}
+			Pants infused with blue space metal
+			'''
+		SetBonus:
+			'''
+			Immunity to 'On Fire!'
+			{$CommonItemTooltip.IncreasesAllDamageBy}
+			'''
 	}
 
 	MalachiteBreastplate: {
-		DisplayName: Malachite Breastplate
-		Tooltip: ""
+		DisplayName: Astronium Breastplate
+		Tooltip:
+			'''
+			{$CommonItemTooltip.IncreasesMeleeDamageBy}
+			{$CommonItemTooltip.IncreasesMeleeSpeedBy@1}
+			Breastplate infused with green space metal
+			'''
+		SetBonus:
+			'''
+			Immunity to 'On Fire!'
+			{$CommonItemTooltip.IncreasesAllDamageBy}
+			'''
 	}
 
 	MalachiteLeggings: {
 		DisplayName: Malachite Leggings
-		Tooltip: ""
+		Tooltip:
+			'''
+			{$CommonItemTooltip.IncreasesMovementSpeedBy}
+			Pants infused with green space metal
+			'''
+		SetBonus:
+			'''
+			Immunity to 'On Fire!'
+			{$CommonItemTooltip.IncreasesAllDamageBy}
+			'''
 	}
 
 	Accessories: {
 		AstroniumInsignia: {
 			DisplayName: Astronium Insignia
-			Tooltip: ""
+			Tooltip:
+				'''
+				Grants an extra dash
+				it's just glowing... purple?
+				'''
 		}
 
 		FluoriteAmulet: {
 			DisplayName: Fluorite Amulet
-			Tooltip: ""
+			Tooltip:
+				'''
+				Grants an extra dash
+				it doesn't smell very blue
+				'''
 		}
 	}
 
 	MalachiteShield: {
 		DisplayName: Malachite Shield
-		Tooltip: ""
+		Tooltip:
+			'''
+			Grants and extra dash
+			just a sheet of green space rock
+			'''
 	}
 
 	MalachiteBullet: {
 		DisplayName: Malachite Bullet
-		Tooltip: ""
+		Tooltip: It's green and it bounces!
 	}
 
 	Weapons: {
 		Ranged: {
 			AstroniumBow: {
 				DisplayName: Astronium Bow
-				Tooltip: ""
+				Tooltip: Shoots three arrows in a volley
 			}
 
 			FluoriteBow: {
 				DisplayName: Fluorite Bow
-				Tooltip: ""
+				Tooltip: Shoots two arrows in a volley
 			}
 		}
 
 		Melee: {
 			AstroniumScythe: {
 				DisplayName: Astronium Scythe
-				Tooltip: ""
+				Tooltip: Pierces enemies multiple times
 			}
 
 			FluoriteTrident: {
 				DisplayName: Fluorite Trident
-				Tooltip: ""
+				Tooltip: Homes in on enemies
 			}
 		}
 
 		Magic: {
 			TomeOfFluorescence: {
 				DisplayName: Tome Of Fluorescence
-				Tooltip: ""
+				Tooltip: Wow, this shoots pretty fast!
 			}
 		}
 	}
 
 	AstroniumOre: {
 		DisplayName: Astronium Ore
-		Tooltip: ""
+		Tooltip: It's glowing purple
 	}
 
 	FluoriteOre: {
 		DisplayName: Fluorite Ore
-		Tooltip: ""
+		Tooltip: Looks like it should be in the ocean
 	}
 
 	MalachiteMinigun: {
 		DisplayName: Malachite Minigun
-		Tooltip: ""
+		Tooltip: A little inaccurate
 	}
 
 	MalachiteOre: {
 		DisplayName: Malachite Ore
-		Tooltip: ""
+		Tooltip: Just green space rock
 	}
 
 	MalachiteStaff: {
 		DisplayName: Malachite Staff
-		Tooltip: ""
+		Tooltip: Pretty basic staff but green
 	}
 
 	MalachiteSword: {
 		DisplayName: Malachite Sword
-		Tooltip: ""
+		Tooltip: Swing Swong
 	}
 
 	Pets: {
 		TheEtomer: {
 			DisplayName: The Etomer
-			Tooltip: ""
+			Tooltip: This is... interesting
 		}
 	}
 
 	AstroniumBar: {
 		DisplayName: Astronium Bar
-		Tooltip: ""
+		Tooltip: It glows purple
 	}
 
 	FluoriteBar: {
 		DisplayName: Fluorite Bar
-		Tooltip: ""
+		Tooltip: It glows blue
 	}
 
 	Materials: {
 		InterstellarAlloyBar: {
 			DisplayName: Interstellar Alloy Bar
-			Tooltip: ""
+			Tooltip: Luminite got nothing on this
 		}
 	}
 
 	MalachiteBar: {
 		DisplayName: Malachite Bar
-		Tooltip: ""
+		Tooltip: It glows green
 	}
 
 	SpaceDirt: {
 		DisplayName: Space Dirt
-		Tooltip: ""
+		Tooltip: Extraterrestrial dirt
 	}
 
 	SpaceStone: {
 		DisplayName: Space Stone
-		Tooltip: ""
+		Tooltip: Extraterrestrial Stone
 	}
 }
 
@@ -191,8 +293,10 @@ Biomes: {
 	}
 }
 
-"Generating a Bigger Space...": Mods.VoyagerMod.Generating a Bigger Space...
-WorldGen.WorldGenTutorialOresPassMessage: Mods.VoyagerMod.WorldGen.WorldGenTutorialOresPassMessage
+WorldGen: {
+	VoyagerModBiomePassMessage: Adding Extraterrestrial Stuff
+	WorldGenTutorialOresPassMessage: Mods.VoyagerMod.WorldGen.WorldGenTutorialOresPassMessage
+}
 
 Buffs: {
 	ElectricTroublemaker: {
@@ -205,14 +309,14 @@ Content: {
 	Items: {
 		AstroniumStaff: {
 			DisplayName: Astronium Staff
-			Tooltip: ""
+			Tooltip: Like the Last Prism but worse
 		}
 	}
 
 	Placeables: {
 		TemporalAltar: {
 			DisplayName: Temporal Altar
-			Tooltip: ""
+			Tooltip: Used to craft advanced space gear
 		}
 	}
 
@@ -377,3 +481,5 @@ Configs: {
 		}
 	}
 }
+
+"Adding Extraterrestrial Stuff": Adding Extraterrestrial Stuff

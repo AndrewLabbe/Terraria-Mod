@@ -13,7 +13,7 @@ namespace VoyagerMod.Content.Armor
 	[AutoloadEquip(EquipType.Head)]
 	public class MalachiteHelmet : ModItem
 	{
-		public static readonly int GenericDamageBonus = 20;
+		public static readonly int GenericDamageBonus = 15;
 		public static readonly int CritBonus = 10;
 		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritBonus);
 		public static LocalizedText SetBonusText { get; private set; }
