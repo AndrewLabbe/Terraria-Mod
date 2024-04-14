@@ -26,5 +26,11 @@ namespace VoyagerMod.Content.VoyPlayer
             rotomPet = false;
         }
         #endregion
+
+        #region Debuffs
+
+        public bool cDepth = false;
+        
+        #endregion
     }
 }
