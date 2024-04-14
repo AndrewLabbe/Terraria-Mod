@@ -22,12 +22,14 @@ namespace VoyagerMod.Content.Projectiles
             Projectile.width = 58;
             Projectile.height = 58;
             Projectile.friendly = true;
-            Projectile.penetrate = 1;
+            Projectile.penetrate = 3;
             Projectile.extraUpdates = 1;
             Projectile.alpha = 100;
             Projectile.tileCollide = false;
             Projectile.ignoreWater = true;
             Projectile.DamageType = DamageClass.Melee;
+            Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = 2; // 1 hit per npc max
         }
 
         public override void AI()

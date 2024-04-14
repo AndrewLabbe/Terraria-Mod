@@ -30,10 +30,12 @@ namespace VoyagerMod.Content.Projectiles
             Projectile.ignoreWater = true;
             Projectile.DamageType = DamageClass.Melee;
             Projectile.timeLeft = 300;
-            Projectile.penetrate = 8;
+            Projectile.penetrate = -1;
             Projectile.usesLocalNPCImmunity = true;
             Projectile.localNPCHitCooldown = 7;
             Projectile.tileCollide = false;
+            Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = 2; // 1 hit per npc max
         }
 
         public override void AI()
@@ -60,7 +62,7 @@ namespace VoyagerMod.Content.Projectiles
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             target.AddBuff(BuffID.OnFire, 240);
-        }
+		}
 
         public override void OnKill(int timeLeft)
         {

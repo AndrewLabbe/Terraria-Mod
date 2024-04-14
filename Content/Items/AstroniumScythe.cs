@@ -14,7 +14,7 @@ namespace VoyagerMod.Content.Items
         {
             Item.width = 56;
             Item.height = 60;
-            Item.damage = 120;
+            Item.damage = 130;
             Item.DamageType = DamageClass.Melee;
             Item.useTurn = true;
             Item.useAnimation = 20;
@@ -31,7 +31,7 @@ namespace VoyagerMod.Content.Items
 
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            Projectile.NewProjectile(source, position, velocity, type, (int)(damage * 0.6), knockback, player.whoAmI, 0f, 0f);
+            Projectile.NewProjectile(source, position, velocity, type, damage, knockback, player.whoAmI, 0f, 0f);
             return false;
         }
 

@@ -13,10 +13,10 @@ namespace VoyagerMod.Content.Items
 		public override void SetDefaults() {
 			// Modders can use Item.DefaultToRangedWeapon to quickly set many common properties, such as: useTime, useAnimation, useStyle, autoReuse, DamageType, shoot, shootSpeed, useAmmo, and noMelee.
 			// See ExampleGun.SetDefaults to see comments explaining those properties
-			Item.DefaultToRangedWeapon(ProjectileID.PurificationPowder, AmmoID.Bullet, 5, 16f, true);
+			Item.DefaultToRangedWeapon(ProjectileID.PurificationPowder, AmmoID.Bullet, 3, 16f, true);
 
 			// Item.SetWeaponValues can quickly set damage, knockBack, and crit
-			Item.SetWeaponValues(11, 1f);
+			Item.SetWeaponValues(18, 1f);
 
 			Item.width = 54; // Hitbox width of the item.
 			Item.height = 22; // Hitbox height of the item.
@@ -27,7 +27,9 @@ namespace VoyagerMod.Content.Items
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<MalachiteBar>(30)
+				.AddIngredient<MalachiteBar>(20)
+				.AddIngredient(ItemID.IllegalGunParts)
+				.AddRecipeGroup(RecipeGroupID.IronBar, 10)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

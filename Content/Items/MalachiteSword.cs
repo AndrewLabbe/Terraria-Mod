@@ -34,7 +34,7 @@ namespace VoyagerMod.Content.Items
 			// Weapon Properties
 			Item.knockBack = 7;  // The knockback of your sword, this is dynamically adjusted in the projectile code.
 			Item.autoReuse = true; // This determines whether the weapon has autoswing
-			Item.damage = 62; // The damage of your sword, this is dynamically adjusted in the projectile code.
+			Item.damage = 50; // The damage of your sword, this is dynamically adjusted in the projectile code.
 			Item.DamageType = DamageClass.Melee; // Deals melee damage
 			Item.noMelee = true;  // This makes sure the item does not deal damage from the swinging animation
 			Item.noUseGraphic = true; // This makes sure the item does not get shown when the player swings his hand
@@ -62,7 +62,8 @@ namespace VoyagerMod.Content.Items
 
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<MalachiteBar>(16)
+				.AddIngredient<MalachiteBar>(18)
+				.AddRecipeGroup(RecipeGroupID.IronBar, 10)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

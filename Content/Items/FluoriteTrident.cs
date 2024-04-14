@@ -17,20 +17,20 @@ namespace VoyagerMod.Content.Items
         public override void SetDefaults()
         {
             Item.width = 44;
-            Item.damage = 52;
+            Item.damage = 78;
             Item.DamageType = DamageClass.Melee;
             Item.noMelee = true;
             Item.useTurn = true;
             Item.noUseGraphic = true;
             Item.useAnimation = 17;
             Item.useStyle = ItemUseStyleID.Shoot;
-            Item.useTime = 17;
+            Item.useTime = 12;
             Item.knockBack = 4.5f;
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
             Item.height = 44;
-            Item.value = 10000;
-            Item.rare = ItemRarityID.Green;
+            Item.value = 100000;
+            Item.rare = ItemRarityID.Cyan;
             Item.shoot = ModContent.ProjectileType<FluoriteTridentProj>();
             Item.shootSpeed = 6f;
         }
