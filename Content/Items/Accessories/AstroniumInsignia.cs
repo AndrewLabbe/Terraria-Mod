@@ -22,12 +22,14 @@ namespace VoyagerMod.Content.Items.Accessories
             Item.value = 10;
             Item.accessory = true;
             Item.rare = ItemRarityID.Purple;
+            Item.defense = 12;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetDamage(DamageClass.Generic) += 1f;
-            player.lifeRegen = 10;
+            player.endurance = 1f - (0.1f * (1f - player.endurance));  // The percentage of damage reduction
+			player.GetModPlayer<ExampleDashPlayer>().DashAccessoryEquipped = true;
+            player.lifeRegen += 8;
             player.manaRegenBuff = true;
             VoyagerPlayer modPlayer = player.Voyager();
             // modPlayer.ascendantInsignia = true;

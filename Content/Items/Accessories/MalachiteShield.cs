@@ -10,19 +10,17 @@ namespace VoyagerMod.Content.Items.Accessories
 	[AutoloadEquip(EquipType.Shield)] // Load the spritesheet you create as a shield for the player when it is equipped.
 	public class MalachiteShield : ModItem
 	{
+		public new string LocalizationCategory => "Items.Accessories";
+
 		public override void SetDefaults() {
 			Item.width = 24;
 			Item.height = 28;
-			Item.value = Item.buyPrice(10);
 			Item.rare = ItemRarityID.Green;
 			Item.accessory = true;
-
-			Item.defense = 1000;
-			Item.lifeRegen = 10;
+			Item.defense = 5;
 		}
 
 		public override void UpdateAccessory(Player player, bool hideVisual) {
-			player.GetDamage(DamageClass.Generic) += 1f; // Increase ALL player damage by 100%
 			player.endurance = 1f - (0.1f * (1f - player.endurance));  // The percentage of damage reduction
 			player.GetModPlayer<ExampleDashPlayer>().DashAccessoryEquipped = true;
 		}
@@ -30,7 +28,7 @@ namespace VoyagerMod.Content.Items.Accessories
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<MalachiteBar>(30)
+				.AddIngredient<MalachiteBar>(20)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

@@ -16,16 +16,15 @@ namespace VoyagerMod.Content.Items.Accessories
             Item.width = 26;
             Item.height = 26;
             Item.value = 1000;
-            Item.rare = ItemRarityID.Orange;
+            Item.rare = ItemRarityID.Cyan;
             Item.accessory = true;
-
-            Item.lifeRegen = 20;
-            Item.defense = 5;
+            Item.defense = 8;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetDamage(DamageClass.Generic) += 1f;
+            player.endurance = 1f - (0.1f * (1f - player.endurance));  // The percentage of damage reduction
+			player.GetModPlayer<ExampleDashPlayer>().DashAccessoryEquipped = true;
             player.manaRegenBuff = true;
             VoyagerPlayer modPlayer = player.Voyager();
             // modPlayer.abyssalAmulet = true;
