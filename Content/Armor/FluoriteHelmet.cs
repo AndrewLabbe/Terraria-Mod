@@ -14,7 +14,8 @@ namespace VoyagerMod.Content.Armor
 	public class FluoriteHelmet : ModItem
 	{
 		public static readonly int AdditiveGenericDamageBonus = 20;
-
+		public static readonly int CritBonus = 12;
+		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(CritBonus);
 		public static LocalizedText SetBonusText { get; private set; }
 
 		public override void SetStaticDefaults() {
@@ -32,7 +33,7 @@ namespace VoyagerMod.Content.Armor
 			Item.height = 18; // Height of the item
 			Item.value = Item.sellPrice(gold: 1); // How many coins the item is worth
 			Item.rare = ItemRarityID.Cyan; // The rarity of the item
-			Item.defense = 5; // The amount of defense the item will give when equipped
+			Item.defense = 18; // The amount of defense the item will give when equipped
 		}
 
 		// IsArmorSet determines what armor pieces are needed for the setbonus to take effect
@@ -40,8 +41,13 @@ namespace VoyagerMod.Content.Armor
 			return body.type == ModContent.ItemType<FluoriteBreastplate>() && legs.type == ModContent.ItemType<FluoriteLeggings>();
 		}
 
+		public override void UpdateEquip(Player player) {
+			player.GetCritChance(DamageClass.Generic) += CritBonus;	
+		}
+
 		// UpdateArmorSet allows you to give set bonuses to the armor.
 		public override void UpdateArmorSet(Player player) {
+			player.buffImmune[BuffID.OnFire] = true; // Make the player immune to Fire
 			player.setBonus = SetBonusText.Value; // This is the setbonus tooltip: "Increases dealt damage by 20%"
 			player.GetDamage(DamageClass.Generic) += AdditiveGenericDamageBonus / 100f; // Increase dealt damage for all weapon classes by 20%
 		}

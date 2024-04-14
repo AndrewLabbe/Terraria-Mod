@@ -1,0 +1,379 @@
+Items: {
+	AstroniumHelmet: {
+		SetBonus: Mods.VoyagerMod.Items.AstroniumHelmet.SetBonus
+		DisplayName: Astronium Helmet
+		Tooltip: ""
+	}
+
+	FluoriteHelmet: {
+		SetBonus: Mods.VoyagerMod.Items.FluoriteHelmet.SetBonus
+		DisplayName: Fluorite Helmet
+		Tooltip: ""
+	}
+
+	MalachiteHelmet: {
+		SetBonus: Mods.VoyagerMod.Items.MalachiteHelmet.SetBonus
+		DisplayName: Malachite Helmet
+		Tooltip: ""
+	}
+
+	MalachiteHood: {
+		SetBonus: Mods.VoyagerMod.Items.MalachiteHood.SetBonus
+		DisplayName: Malachite Hood
+		Tooltip: ""
+	}
+
+	AstroniumBreastplate: {
+		DisplayName: Astronium Breastplate
+		Tooltip: ""
+	}
+
+	AstroniumLeggings: {
+		DisplayName: Astronium Leggings
+		Tooltip: ""
+	}
+
+	FluoriteBreastplate: {
+		DisplayName: Fluorite Breastplate
+		Tooltip: ""
+	}
+
+	FluoriteLeggings: {
+		DisplayName: Fluorite Leggings
+		Tooltip: ""
+	}
+
+	MalachiteBreastplate: {
+		DisplayName: Malachite Breastplate
+		Tooltip: ""
+	}
+
+	MalachiteLeggings: {
+		DisplayName: Malachite Leggings
+		Tooltip: ""
+	}
+
+	Accessories: {
+		AstroniumInsignia: {
+			DisplayName: Astronium Insignia
+			Tooltip: ""
+		}
+
+		FluoriteAmulet: {
+			DisplayName: Fluorite Amulet
+			Tooltip: ""
+		}
+	}
+
+	MalachiteShield: {
+		DisplayName: Malachite Shield
+		Tooltip: ""
+	}
+
+	MalachiteBullet: {
+		DisplayName: Malachite Bullet
+		Tooltip: ""
+	}
+
+	Weapons: {
+		Ranged: {
+			AstroniumBow: {
+				DisplayName: Astronium Bow
+				Tooltip: ""
+			}
+
+			FluoriteBow: {
+				DisplayName: Fluorite Bow
+				Tooltip: ""
+			}
+		}
+
+		Melee: {
+			AstroniumScythe: {
+				DisplayName: Astronium Scythe
+				Tooltip: ""
+			}
+
+			FluoriteTrident: {
+				DisplayName: Fluorite Trident
+				Tooltip: ""
+			}
+		}
+
+		Magic: {
+			TomeOfFluorescence: {
+				DisplayName: Tome Of Fluorescence
+				Tooltip: ""
+			}
+		}
+	}
+
+	AstroniumOre: {
+		DisplayName: Astronium Ore
+		Tooltip: ""
+	}
+
+	FluoriteOre: {
+		DisplayName: Fluorite Ore
+		Tooltip: ""
+	}
+
+	MalachiteMinigun: {
+		DisplayName: Malachite Minigun
+		Tooltip: ""
+	}
+
+	MalachiteOre: {
+		DisplayName: Malachite Ore
+		Tooltip: ""
+	}
+
+	MalachiteStaff: {
+		DisplayName: Malachite Staff
+		Tooltip: ""
+	}
+
+	MalachiteSword: {
+		DisplayName: Malachite Sword
+		Tooltip: ""
+	}
+
+	Pets: {
+		TheEtomer: {
+			DisplayName: The Etomer
+			Tooltip: ""
+		}
+	}
+
+	AstroniumBar: {
+		DisplayName: Astronium Bar
+		Tooltip: ""
+	}
+
+	FluoriteBar: {
+		DisplayName: Fluorite Bar
+		Tooltip: ""
+	}
+
+	Materials: {
+		InterstellarAlloyBar: {
+			DisplayName: Interstellar Alloy Bar
+			Tooltip: ""
+		}
+	}
+
+	MalachiteBar: {
+		DisplayName: Malachite Bar
+		Tooltip: ""
+	}
+
+	SpaceDirt: {
+		DisplayName: Space Dirt
+		Tooltip: ""
+	}
+
+	SpaceStone: {
+		DisplayName: Space Stone
+		Tooltip: ""
+	}
+}
+
+Tiles: {
+	AstroniumOre.MapEntry: Astronium Ore
+	FluoriteOre.MapEntry: Fluorite Ore
+	MalachiteOre.MapEntry: Malachite Ore
+}
+
+Biomes: {
+	SpaceBiome: {
+		DisplayName: Space Biome
+		TownNPCDialogueName: the Space Biome
+	}
+}
+
+"Generating a Bigger Space...": Mods.VoyagerMod.Generating a Bigger Space...
+WorldGen.WorldGenTutorialOresPassMessage: Mods.VoyagerMod.WorldGen.WorldGenTutorialOresPassMessage
+
+Buffs: {
+	ElectricTroublemaker: {
+		DisplayName: Electric Troublemaker
+		Description: Mods.VoyagerMod.Buffs.ElectricTroublemaker.Description
+	}
+}
+
+Content: {
+	Items: {
+		AstroniumStaff: {
+			DisplayName: Astronium Staff
+			Tooltip: ""
+		}
+	}
+
+	Placeables: {
+		TemporalAltar: {
+			DisplayName: Temporal Altar
+			Tooltip: ""
+		}
+	}
+
+	Projectiles.AstroniumScytheProjectile.DisplayName: Astronium Scythe Projectile
+}
+
+Projectiles: {
+	AstroniumAttackStar.DisplayName: Astronium Attack Star
+
+	Magic: {
+		AstroniumAttackStrike.DisplayName: Astronium Attack Strike
+		FluoriteLaser.DisplayName: Fluorite Laser
+	}
+
+	Ranged.FluoriteArrow.DisplayName: Fluorite Arrow
+
+	Melee: {
+		FluoriteTridentProj.DisplayName: Fluorite Trident Proj
+		FluoriteTridentWhirlpool.DisplayName: Fluorite Trident Whirlpool
+	}
+
+	MalachiteBullet.DisplayName: Malachite Bullet
+	MalachiteSwordProjectile.DisplayName: Malachite Sword Projectile
+	Pets.RotomPet.DisplayName: Rotom Pet
+	SparklingBall.DisplayName: Sparkling Ball
+}
+
+Configs: {
+	VoyagerConfig: {
+		DisplayName: Voyager Config
+
+		Headers: {
+			Graphics: Graphics Header
+			UI: U I Header
+			Gameplay: Gameplay Header
+			BaseBoosts: Base Boosts Header
+		}
+
+		Afterimages: {
+			Label: Afterimages
+			Tooltip: ""
+		}
+
+		ParticleLimit: {
+			Label: Particle Limit
+			Tooltip: ""
+		}
+
+		BossesStopWeather: {
+			Label: Bosses Stop Weather
+			Tooltip: ""
+		}
+
+		Screenshake: {
+			Label: Screenshake
+			Tooltip: ""
+		}
+
+		StealthInvisibility: {
+			Label: Stealth Invisibility
+			Tooltip: ""
+		}
+
+		MusicModReminderMessage: {
+			Label: Music Mod Reminder Message
+			Tooltip: ""
+		}
+
+		ShopNewAlert: {
+			Label: Shop New Alert
+			Tooltip: ""
+		}
+
+		BossHealthBarExtraInfo: {
+			Label: Boss Health Bar Extra Info
+			Tooltip: ""
+		}
+
+		DebuffDisplay: {
+			Label: Debuff Display
+			Tooltip: ""
+		}
+
+		CooldownDisplay: {
+			Label: Cooldown Display
+			Tooltip: ""
+		}
+
+		VanillaCooldownDisplay: {
+			Label: Vanilla Cooldown Display
+			Tooltip: ""
+		}
+
+		FasterFallHotkey: {
+			Label: Faster Fall Hotkey
+			Tooltip: ""
+		}
+
+		RemoveReforgeRNG: {
+			Label: Remove Reforge R N G
+			Tooltip: ""
+		}
+
+		EarlyHardmodeProgressionRework: {
+			Label: Early Hardmode Progression Rework
+			Tooltip: ""
+		}
+
+		BossZen: {
+			Label: Boss Zen
+			Tooltip: ""
+		}
+
+		PotionSelling: {
+			Label: Potion Selling
+			Tooltip: ""
+		}
+
+		TownNPCsSpawnAtNight: {
+			Label: Town N P Cs Spawn At Night
+			Tooltip: ""
+		}
+
+		TownNPCSpawnRateMultiplier: {
+			Label: Town N P C Spawn Rate Multiplier
+			Tooltip: ""
+		}
+
+		PlayerRespawnTime_BossAlive: {
+			Label: Player Respawn Time_ Boss Alive
+			Tooltip: ""
+		}
+
+		BossHealthBoost: {
+			Label: Boss Health Boost
+			Tooltip: ""
+		}
+
+		DefaultDashEnabled: {
+			Label: Default Dash Enabled
+			Tooltip: ""
+		}
+
+		FasterBaseSpeed: {
+			Label: Faster Base Speed
+			Tooltip: ""
+		}
+
+		HigherJumpHeight: {
+			Label: Higher Jump Height
+			Tooltip: ""
+		}
+
+		FasterJumpSpeed: {
+			Label: Faster Jump Speed
+			Tooltip: ""
+		}
+
+		FasterTilePlacement: {
+			Label: Faster Tile Placement
+			Tooltip: ""
+		}
+	}
+}
