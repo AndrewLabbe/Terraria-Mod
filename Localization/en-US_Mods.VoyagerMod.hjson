@@ -308,6 +308,11 @@ Buffs: {
 		DisplayName: Electric Troublemaker
 		Description: Mods.VoyagerMod.Buffs.ElectricTroublemaker.Description
 	}
+
+	Suffocating: {
+		DisplayName: Suffocating
+		Description: Mods.VoyagerMod.Buffs.Suffocating.Description
+	}
 }
 
 Content: {
