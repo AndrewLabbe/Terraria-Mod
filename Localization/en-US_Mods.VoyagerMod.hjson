@@ -188,6 +188,11 @@ Items: {
 				DisplayName: Fluorite Bow
 				Tooltip: Shoots two arrows in a volley
 			}
+
+			InterstellarBombardier: {
+				DisplayName: Interstellar Bombardier
+				Tooltip: ""
+			}
 		}
 
 		Melee: {
@@ -341,7 +346,11 @@ Projectiles: {
 		FluoriteLaser.DisplayName: Fluorite Laser
 	}
 
-	Ranged.FluoriteArrow.DisplayName: Fluorite Arrow
+	Ranged: {
+		FluoriteArrow.DisplayName: Fluorite Arrow
+		InterstellarBombardierDustProjectile.DisplayName: Interstellar Bombardier Dust Projectile
+		Nuke.DisplayName: Nuke
+	}
 
 	Melee: {
 		FluoriteTridentProj.DisplayName: Fluorite Trident Proj
