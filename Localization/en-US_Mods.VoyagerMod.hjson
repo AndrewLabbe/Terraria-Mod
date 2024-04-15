@@ -193,6 +193,11 @@ Items: {
 				DisplayName: Interstellar Bombardier
 				Tooltip: ""
 			}
+
+			InterstellarAlex: {
+				DisplayName: Interstellar Alex
+				Tooltip: ""
+			}
 		}
 
 		Melee: {
