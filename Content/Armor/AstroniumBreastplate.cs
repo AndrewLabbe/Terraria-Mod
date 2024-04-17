@@ -2,7 +2,6 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using VoyagerMod.Content.Items;
 using VoyagerMod.Content.Items.Placeable;
 
 namespace VoyagerMod.Content.Armor
@@ -35,8 +34,11 @@ namespace VoyagerMod.Content.Armor
 
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
-			CreateRecipe().AddIngredient<AstroniumBar>(24)
-				.AddTile(TileID.Anvils)
+			CreateRecipe()
+				.AddIngredient<AstroniumBar>(15)
+				.AddIngredient(ItemID.BeetleScaleMail)
+				.AddIngredient<FluoriteBreastplate>()
+				.AddTile(ModContent.TileType<Tiles.TemporalAltar>())
 				.Register();
 		}
 	}

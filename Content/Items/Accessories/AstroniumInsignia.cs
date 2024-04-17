@@ -41,6 +41,7 @@ namespace VoyagerMod.Content.Items.Accessories
             CreateRecipe().
                 AddIngredient<AstroniumBar>(20).
                 AddIngredient<FluoriteAmulet>(1).
+                AddIngredient(ItemID.Ectoplasm, 15).
                 AddIngredient(ItemID.SoulofFright, 10).
                 AddTile(TileID.Anvils).
                 Register();

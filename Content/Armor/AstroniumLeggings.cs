@@ -31,8 +31,10 @@ namespace VoyagerMod.Content.Armor
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<AstroniumBar>(18)
-				.AddTile(TileID.Anvils)
+				.AddIngredient<AstroniumBar>(15)
+				.AddIngredient(ItemID.BeetleLeggings)
+				.AddIngredient<FluoriteLeggings>()
+				.AddTile(ModContent.TileType<Tiles.TemporalAltar>())
 				.Register();
 		}
 	}

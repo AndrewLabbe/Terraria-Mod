@@ -31,7 +31,9 @@ namespace VoyagerMod.Content.Armor
 
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
-			CreateRecipe().AddIngredient<MalachiteBar>(24)
+			CreateRecipe()
+				.AddIngredient<MalachiteBar>(24)
+				.AddIngredient(ItemID.GoldChainmail)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

@@ -38,7 +38,11 @@ namespace VoyagerMod.Content.Items
         public override void AddRecipes()
 		{
 			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient<FluoriteBar>(14);
+			recipe.AddIngredient<FluoriteBar>(18);
+            recipe.AddIngredient(ItemID.TitaniumTrident);
+            recipe.AddIngredient(ItemID.Trident);
+            recipe.AddIngredient(ItemID.SoulofMight, 10);
+            recipe.AddIngredient(ItemID.SoulofNight, 10);
 			recipe.AddTile(TileID.Anvils);
 			recipe.Register();
 		}

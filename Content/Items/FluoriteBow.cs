@@ -5,6 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using VoyagerMod.Content.Projectiles;
 using VoyagerMod.Content.Utilities;
+using VoyagerMod.Content.Items.Placeable;
 
 namespace VoyagerMod.Content.Items
 {
@@ -49,5 +50,14 @@ namespace VoyagerMod.Content.Items
             }
             return false;
         }
+        public override void AddRecipes() {
+			CreateRecipe()
+				.AddIngredient<FluoriteBar>(20)
+				.AddIngredient(ItemID.FallenStar, 10)
+                .AddIngredient(ItemID.SoulofSight, 10)
+                .AddIngredient(ItemID.SoulofLight, 12)
+				.AddTile(TileID.Anvils)
+				.Register();
+		}
     }
 }
