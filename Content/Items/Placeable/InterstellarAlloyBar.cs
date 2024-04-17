@@ -32,6 +32,7 @@ namespace VoyagerMod.Content.Items.Placeable
                 AddIngredient<FluoriteBar>(3).
                 AddIngredient<AstroniumBar>(3).
                 AddIngredient<MalachiteBar>(3).
+                AddIngredient(ItemID.LunarBar, 3).
                 AddTile<TemporalAltar>().
                 Register();
         }

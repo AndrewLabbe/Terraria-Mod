@@ -31,8 +31,9 @@ namespace VoyagerMod.Content.Items.Placeable.Furniture
         {
             CreateRecipe().
                 AddIngredient<AstroniumBar>(10).
-                AddIngredient<MalachiteBar>(5).
-                AddIngredient<FluoriteBar>(5).
+                AddIngredient<FluoriteBar>(10).
+                AddIngredient<MalachiteBar>(10).
+                AddIngredient(ItemID.Hellforge, 2).
                 AddTile(TileID.LunarCraftingStation).
                 Register();
         }

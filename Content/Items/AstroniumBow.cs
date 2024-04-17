@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using VoyagerMod.Content.Items.Placeable;
+using VoyagerMod.Content.Tiles;
 
 namespace VoyagerMod.Content.Items
 {
@@ -37,8 +38,10 @@ namespace VoyagerMod.Content.Items
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient<AstroniumBar>(7).
-                AddTile(TileID.Anvils).
+                AddIngredient<Placeable.AstroniumBar>(16).
+                AddIngredient<FluoriteBow>(1).
+                AddIngredient(ItemID.DaedalusStormbow).
+                AddTile(ModContent.TileType<TemporalAltar>()).
                 Register();
         }
     }

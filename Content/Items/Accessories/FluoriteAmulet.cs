@@ -34,6 +34,9 @@ namespace VoyagerMod.Content.Items.Accessories
         public override void AddRecipes() {
 			CreateRecipe()
 				.AddIngredient<FluoriteBar>(24)
+                .AddIngredient<MalachiteShield>()
+                .AddIngredient(ItemID.SoulofSight, 5)
+                .AddIngredient(ItemID.SoulofMight, 5)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

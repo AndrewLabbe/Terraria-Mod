@@ -3,6 +3,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using VoyagerMod.Content.Items.Placeable;
+using VoyagerMod.Content.Tiles;
 
 namespace VoyagerMod.Content.Items
 {
@@ -36,11 +37,11 @@ namespace VoyagerMod.Content.Items
         public override void AddRecipes()
         {
             CreateRecipe().
+                AddIngredient<Placeable.AstroniumBar>(14).
                 AddIngredient(ItemID.RainbowRod).
                 AddIngredient(ItemID.LargeRuby).
-                AddIngredient(ItemID.CrystalShard).
-                AddIngredient<AstroniumBar>(14).
-                AddTile(TileID.Anvils).
+                AddIngredient(ItemID.CrystalShard, 15).
+                AddTile(ModContent.TileType<TemporalAltar>()).
                 Register();
         }
     }

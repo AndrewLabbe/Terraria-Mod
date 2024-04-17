@@ -4,8 +4,8 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
-using VoyagerMod.Content.Items.Placeable;
 using VoyagerMod.Content.Projectiles;
+using VoyagerMod.Content.Tiles;
 
 namespace VoyagerMod.Content.Items
 {
@@ -126,8 +126,10 @@ namespace VoyagerMod.Content.Items
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient(ItemID.BrokenHeroSword).
-                AddIngredient<InterstellarAlloyBar>(14).
+                AddIngredient<Placeable.InterstellarAlloyBar>(10).
+                AddIngredient(ItemID.TerraBlade).
+                AddIngredient(ItemID.Meowmere).
+                AddTile(ModContent.TileType<TemporalAltar>()).
                 Register();
         }
     }

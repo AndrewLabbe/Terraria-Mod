@@ -29,6 +29,7 @@ namespace VoyagerMod.Content.Items.Accessories
 		public override void AddRecipes() {
 			CreateRecipe()
 				.AddIngredient<MalachiteBar>(20)
+				//.AddIngredient<> -- this is the new accessory below shield
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

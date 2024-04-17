@@ -56,6 +56,9 @@ namespace VoyagerMod.Content.Armor
 		public override void AddRecipes() {
 			CreateRecipe()
 				.AddIngredient<FluoriteBar>(15)
+				.AddIngredient<MalachiteHelmet>()
+				.AddIngredient(ItemID.Feather, 10)
+				.AddIngredient(ItemID.FallenStar, 10)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

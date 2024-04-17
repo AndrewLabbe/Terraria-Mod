@@ -57,7 +57,9 @@ namespace VoyagerMod.Content.Armor
 		public override void AddRecipes() {
 			CreateRecipe()
 				.AddIngredient<AstroniumBar>(15)
-				.AddTile(TileID.Anvils)
+				.AddIngredient(ItemID.BeetleHelmet)
+				.AddIngredient<FluoriteHelmet>()
+				.AddTile(ModContent.TileType<Tiles.TemporalAltar>())
 				.Register();
 		}
 	}

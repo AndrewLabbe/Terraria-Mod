@@ -32,8 +32,13 @@ namespace VoyagerMod.Content.Items
         public override void AddRecipes()
         {
             CreateRecipe().
-                AddIngredient(ItemID.SpellTome).
-                AddIngredient<FluoriteBar>(8).
+                AddIngredient<FluoriteBar>(16).
+                AddIngredient(ItemID.SpellTome, 2).
+                AddIngredient(ItemID.FallenStar, 10).
+                AddIngredient(ItemID.Feather, 20).
+                AddIngredient(ItemID.SoulofLight, 10).
+                AddIngredient(ItemID.SoulofNight, 10).
+                AddIngredient(ItemID.LightShard, 2).
                 AddTile(TileID.Bookcases).
                 Register();
         }

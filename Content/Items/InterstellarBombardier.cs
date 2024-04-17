@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using VoyagerMod.Content.Projectiles;
+using VoyagerMod.Content.Tiles;
 
 namespace VoyagerMod.Content.Items
 {
@@ -40,6 +41,16 @@ namespace VoyagerMod.Content.Items
         {
             Projectile.NewProjectile(source, position, velocity, ModContent.ProjectileType<Nuke>(), damage, knockback, player.whoAmI, RocketType);
             return false;
+        }
+        public override void AddRecipes()
+        {
+            CreateRecipe().
+                AddIngredient<Placeable.InterstellarAlloyBar>(10).
+                AddIngredient(ItemID.Celeb2).
+                AddIngredient(ItemID.RocketLauncher).
+                AddIngredient(ItemID.GrenadeLauncher).
+                AddTile(ModContent.TileType<TemporalAltar>()).
+                Register();
         }
     }
 }

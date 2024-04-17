@@ -4,6 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using VoyagerMod.Content.Projectiles;
+using VoyagerMod.Content.Tiles;
 
 namespace VoyagerMod.Content.Items
 {
@@ -43,6 +44,16 @@ namespace VoyagerMod.Content.Items
         public override void OnHitPvp(Player player, Player target, Player.HurtInfo hurtInfo)
         {
             target.AddBuff(BuffID.OnFire, 300);
+        }
+
+        public override void AddRecipes()
+        {
+            CreateRecipe().
+                AddIngredient<Placeable.AstroniumBar>(15).
+                AddIngredient(ItemID.DeathSickle).
+                AddIngredient(ItemID.Sickle).
+                AddTile(ModContent.TileType<TemporalAltar>()).
+                Register();
         }
     }
 }

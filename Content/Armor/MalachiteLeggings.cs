@@ -32,6 +32,7 @@ namespace VoyagerMod.Content.Armor
 		public override void AddRecipes() {
 			CreateRecipe()
 				.AddIngredient<MalachiteBar>(18)
+				.AddIngredient(ItemID.GoldGreaves)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}
