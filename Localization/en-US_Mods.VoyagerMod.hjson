@@ -293,6 +293,25 @@ Items: {
 		DisplayName: Space Stone
 		Tooltip: Extraterrestrial Stone
 	}
+
+	Armor: {
+		PostMoonLord: {
+			InterstellarBreastplate: {
+				DisplayName: Interstellar Breastplate
+				Tooltip: ""
+			}
+
+			InterstellarHelmet: {
+				DisplayName: Interstellar Helmet
+				Tooltip: ""
+			}
+
+			InterstellarLeggings: {
+				DisplayName: Interstellar Leggings
+				Tooltip: ""
+			}
+		}
+	}
 }
 
 Tiles: {
