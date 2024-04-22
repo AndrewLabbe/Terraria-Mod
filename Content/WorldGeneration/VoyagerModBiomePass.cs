@@ -25,7 +25,7 @@ namespace VoyagerMod.Content.WorldGeneration
 
 			//initial "rectangle" biome
 			for (int i = 0; i < Main.maxTilesX; i++) {
-				for(int j = 80; j < 135; j++){
+				for(int j = 70; j < 125; j++){
 					WorldGen.PlaceTile(i, j, ModContent.TileType<SpaceDirt>(), true);
 				}
 			}
@@ -33,7 +33,7 @@ namespace VoyagerMod.Content.WorldGeneration
 			//spawning space stone
 			for (int k = 0; k < (int)((Main.maxTilesX * Main.maxTilesY) * 9E-05); k++) {
 				int x = WorldGen.genRand.Next(12, Main.maxTilesX-12);
-				int y = WorldGen.genRand.Next(80, 138); 
+				int y = WorldGen.genRand.Next(70, 128); 
 
 				int randW = WorldGen.genRand.Next(4, 10);
 				int randH = WorldGen.genRand.Next(4, 10);
@@ -44,7 +44,7 @@ namespace VoyagerMod.Content.WorldGeneration
 
 			//removing excess stone
 			for (int i = 0; i < Main.maxTilesX; i++) {
-				for(int j = 50; j <= 79; j++){
+				for(int j = 40; j <= 69; j++){
 					WorldGen.KillTile(i, j, false, false, false);
 				}
 			}
@@ -53,22 +53,22 @@ namespace VoyagerMod.Content.WorldGeneration
 			for (int i = 0; i < Main.maxTilesX; i+=15) {
 				int strength = WorldGen.genRand.Next(5, 10);
 				int steps = WorldGen.genRand.Next(50, 60); 
-				WorldGen.TileRunner(i, 135, strength, steps, ModContent.TileType<SpaceDirt>(), true, 1);
+				WorldGen.TileRunner(i, 125, strength, steps, ModContent.TileType<SpaceDirt>(), true, 1);
 			}
 			for (int i = 0; i < Main.maxTilesX; i+=15) {
 				int strength = WorldGen.genRand.Next(5, 10);
 				int steps = WorldGen.genRand.Next(50, 60); 
-				WorldGen.TileRunner(i, 135, strength, steps, ModContent.TileType<SpaceDirt>(), true, -1);
+				WorldGen.TileRunner(i, 125, strength, steps, ModContent.TileType<SpaceDirt>(), true, -1);
 			}
 			for (int i = 0; i < Main.maxTilesX; i++) {
-				for(int j = 135; j < 140; j++){
+				for(int j = 125; j < 130; j++){
 					WorldGen.PlaceTile(i, j, ModContent.TileType<SpaceDirt>(), true);
 				}
 			}
 			for(int i = 0; i < Main.maxTilesX; i++){
 				int randLength = WorldGen.genRand.Next(5, 10);
 				for(int c = 0; c < randLength; c++){
-					WorldGen.PlaceTile(i+c, 140, ModContent.TileType<SpaceDirt>(), true);
+					WorldGen.PlaceTile(i+c, 130, ModContent.TileType<SpaceDirt>(), true);
 				}
 				i+=randLength+WorldGen.genRand.Next(0, 7);
 			}
@@ -79,8 +79,8 @@ namespace VoyagerMod.Content.WorldGeneration
     			int randLength = WorldGen.genRand.Next(5, Main.maxTilesX / numDivots);
    			 	int startX = Main.maxTilesX / numDivots * i;
 
-    			int startY = 80;
-    			int endY = WorldGen.genRand.Next(100, 115);
+    			int startY = 70;
+    			int endY = WorldGen.genRand.Next(90, 105);
 
     			// Adjust startY and endY if you want divots only in a certain area of the world
 				for (int y = startY; y < endY; y++){
@@ -101,7 +101,7 @@ namespace VoyagerMod.Content.WorldGeneration
 				// The inside of this for loop corresponds to one single splotch of our Ore.
 				// First, we randomly choose any coordinate in the world by choosing a random x and y value.
 				int x = WorldGen.genRand.Next(0, Main.maxTilesX);
-				int y = WorldGen.genRand.Next(80, 130); // WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
+				int y = WorldGen.genRand.Next(70, 120); // WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
 
 				// Then, we call WorldGen.TileRunner with random "strength" and random "steps", as well as the Tile we wish to place. Feel free to experiment with strength and step to see the shape they generate.
 				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<MalachiteOre>());
@@ -112,7 +112,7 @@ namespace VoyagerMod.Content.WorldGeneration
 				// The inside of this for loop corresponds to one single splotch of our Ore.
 				// First, we randomly choose any coordinate in the world by choosing a random x and y value.
 				int x = WorldGen.genRand.Next(0, Main.maxTilesX);
-				int y = WorldGen.genRand.Next(80, 130); // WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
+				int y = WorldGen.genRand.Next(70, 120); // WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
 
 				// Then, we call WorldGen.TileRunner with random "strength" and random "steps", as well as the Tile we wish to place. Feel free to experiment with strength and step to see the shape they generate.
 				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<FluoriteOre>());
@@ -123,7 +123,7 @@ namespace VoyagerMod.Content.WorldGeneration
 				// The inside of this for loop corresponds to one single splotch of our Ore.
 				// First, we randomly choose any coordinate in the world by choosing a random x and y value.
 				int x = WorldGen.genRand.Next(0, Main.maxTilesX);
-				int y = WorldGen.genRand.Next(80, 130); // WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
+				int y = WorldGen.genRand.Next(70, 120); // WorldGen.worldSurfaceLow is actually the highest surface tile. In practice you might want to use WorldGen.rockLayer or other WorldGen values.
 
 				// Then, we call WorldGen.TileRunner with random "strength" and random "steps", as well as the Tile we wish to place. Feel free to experiment with strength and step to see the shape they generate.
 				WorldGen.TileRunner(x, y, WorldGen.genRand.Next(3, 6), WorldGen.genRand.Next(2, 6), ModContent.TileType<AstroniumOre>());
