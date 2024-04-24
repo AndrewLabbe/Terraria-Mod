@@ -11,6 +11,15 @@ This project is a collaboration effort between two Junior Computer Science stude
 *Prerequisites: Must have Terraria and TModLoader already installed and run (at least once), both of which can be purchased from the Steam store.
 
 Download Steam: https://store.steampowered.com/about/download
+
+To download tModLoader in Steam: 
+1. Open Steam
+2. Navigate to the store page on the top left
+3. In the search bar on the right of the screen, type: "tModLoader" and click on the first icon
+4. Scroll down and click "Install Now"
+5. Run it by clicking on the Library tab next to the Store tab, then clicking on tModLoader on the left bar and clicking the "Play" button in Green
+To download terraria in Steam, do the steps above but replace every word of "tModLoader" to terraria
+
 1. Open/Run tModLoader.
 2. Click "Workshop".
 3. Click "Download Mods".
