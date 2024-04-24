@@ -4,6 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using VoyagerMod.Content.Items.Placeable;
+using VoyagerMod.Content.Buffs;
 
 namespace VoyagerMod.Content.Items.Accessories
 {
@@ -23,6 +24,7 @@ namespace VoyagerMod.Content.Items.Accessories
 		public override void UpdateAccessory(Player player, bool hideVisual) {
 			player.endurance = 1f - (0.1f * (1f - player.endurance));  // The percentage of damage reduction
 			player.GetModPlayer<ExampleDashPlayer>().DashAccessoryEquipped = true;
+			player.buffImmune[ModContent.BuffType<Suffocating>()] = true;
 		}
 
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.

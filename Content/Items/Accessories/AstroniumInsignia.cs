@@ -1,12 +1,8 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using System;
-using System.Collections.Generic;
-using VoyagerMod.Content.VoyPlayer;
-using VoyagerMod.Content.Utilities;
 using VoyagerMod.Content.Items.Placeable;
-using VoyagerMod.Content.Items.Accessories;
+using VoyagerMod.Content.Buffs;
 
 namespace VoyagerMod.Content.Items.Accessories
 {
@@ -31,9 +27,7 @@ namespace VoyagerMod.Content.Items.Accessories
 			player.GetModPlayer<ExampleDashPlayer>().DashAccessoryEquipped = true;
             player.lifeRegen += 8;
             player.manaRegenBuff = true;
-            VoyagerPlayer modPlayer = player.Voyager();
-            // modPlayer.ascendantInsignia = true;
-            // player.empressBrooch = true;
+            player.buffImmune[ModContent.BuffType<Suffocating>()] = true;
         }
 
         public override void AddRecipes()

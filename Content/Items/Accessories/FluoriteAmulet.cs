@@ -1,9 +1,8 @@
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
-using VoyagerMod.Content.VoyPlayer;
-using VoyagerMod.Content.Utilities;
 using VoyagerMod.Content.Items.Placeable;
+using VoyagerMod.Content.Buffs;
 
 namespace VoyagerMod.Content.Items.Accessories
 {
@@ -26,9 +25,7 @@ namespace VoyagerMod.Content.Items.Accessories
             player.endurance = 1f - (0.1f * (1f - player.endurance));  // The percentage of damage reduction
 			player.GetModPlayer<ExampleDashPlayer>().DashAccessoryEquipped = true;
             player.manaRegenBuff = true;
-            VoyagerPlayer modPlayer = player.Voyager();
-            // modPlayer.abyssalAmulet = true;
-            // player.buffImmune[ModContent.BuffType<RiptideDebuff>()] = true;
+            player.buffImmune[ModContent.BuffType<Suffocating>()] = true;
         }
 
         public override void AddRecipes() {

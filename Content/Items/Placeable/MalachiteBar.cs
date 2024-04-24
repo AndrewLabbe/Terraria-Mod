@@ -22,6 +22,7 @@ namespace VoyagerMod.Content.Items.Placeable
 			Item.width = 20;
 			Item.height = 20;
 			Item.value = 750; // The cost of the item in copper coins. (1 = 1 copper, 100 = 1 silver, 1000 = 1 gold, 10000 = 1 platinum)
+			Item.rare = ItemRarityID.Green;
 		}
 
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.

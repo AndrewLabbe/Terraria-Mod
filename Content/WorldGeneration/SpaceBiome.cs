@@ -1,7 +1,4 @@
-using Microsoft.Xna.Framework;
-using System;
 using Terraria;
-using Terraria.Graphics.Capture;
 using Terraria.ModLoader;
 using VoyagerMod.Common.Systems;
 using VoyagerMod.Content.Buffs;

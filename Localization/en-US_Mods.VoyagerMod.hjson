@@ -149,6 +149,7 @@ Items: {
 			Tooltip:
 				'''
 				Grants an extra dash
+				Immunity to Suffocating! debuff
 				it's just glowing... purple?
 				'''
 		}
@@ -158,6 +159,7 @@ Items: {
 			Tooltip:
 				'''
 				Grants an extra dash
+				Immunity to Suffocating! debuff
 				it doesn't smell very blue
 				'''
 		}
@@ -168,6 +170,7 @@ Items: {
 		Tooltip:
 			'''
 			Grants and extra dash
+			Immunity to Suffocating! debuff
 			just a sheet of green space rock
 			'''
 	}
@@ -191,7 +194,7 @@ Items: {
 
 			InterstellarBombardier: {
 				DisplayName: Interstellar Bombardier
-				Tooltip: ""
+				Tooltip: Have fun with it!
 			}
 
 			InterstellarAlex: {
@@ -213,7 +216,7 @@ Items: {
 
 			InterstellarSword: {
 				DisplayName: Interstellar Sword
-				Tooltip: ""
+				Tooltip: Better Terrablade 
 			}
 		}
 
@@ -340,7 +343,7 @@ Buffs: {
 
 	Suffocating: {
 		DisplayName: Suffocating
-		Description: Mods.VoyagerMod.Buffs.Suffocating.Description
+		Description: Suffocating!
 	}
 }
 
