@@ -19,8 +19,9 @@ To download tModLoader in Steam:
 4. Scroll down and click "Install Now"
 5. Run it by clicking on the Library tab next to the Store tab, then clicking on tModLoader on the left bar and clicking the "Play" button in Green
 
-To download terraria in Steam, do the steps above but replace every word of "tModLoader" to terraria
+To download Terraria in Steam, do the steps above but replace every word of "tModLoader" with Terraria
 
+To run after both tModLoader and Terraria are installed:
 1. Open/Run tModLoader.
 2. Click "Workshop".
 3. Click "Download Mods".
