@@ -9,7 +9,7 @@ This project is a collaboration effort between two Junior Computer Science stude
 
 ## How can I run this project?
 *Prerequisites: Must have Terraria and TModLoader already installed and run (at least once), both of which can be purchased from the Steam store.
-[Steam][https://store.steampowered.com/about/download]
+Download Steam: https://store.steampowered.com/about/download
 1. Open/Run tModLoader.
 2. Click "Workshop".
 3. Click "Download Mods".
