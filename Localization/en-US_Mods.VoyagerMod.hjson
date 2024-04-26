@@ -167,12 +167,12 @@ Items: {
 		SpaceRing: {
 			DisplayName: Space Ring
 			Tooltip:
-			'''
-			{$CommonItemTooltip.lifeRegen}
-			{$CommonItemTooltip.manaRegen}
-			Immunity to Suffocating 
-			Just a simple ring...
-			'''
+				'''
+				{$CommonItemTooltip.lifeRegen}
+				{$CommonItemTooltip.manaRegen}
+				Immunity to Suffocating 
+				Just a simple ring...
+				'''
 		}
 	}
 
@@ -235,6 +235,11 @@ Items: {
 			TomeOfFluorescence: {
 				DisplayName: Tome Of Fluorescence
 				Tooltip: Wow, this shoots pretty fast!
+			}
+
+			InterstellarGrimoire: {
+				DisplayName: Interstellar Grimoire
+				Tooltip: It's Like an Octopus in a Book
 			}
 		}
 	}
@@ -382,6 +387,7 @@ Projectiles: {
 	Magic: {
 		AstroniumAttackStrike.DisplayName: Astronium Attack Strike
 		FluoriteLaser.DisplayName: Fluorite Laser
+		ElementTentacle.DisplayName: Element Tentacle
 	}
 
 	Ranged: {
