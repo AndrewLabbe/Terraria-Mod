@@ -168,6 +168,8 @@ Items: {
 			DisplayName: Space Ring
 			Tooltip:
 			'''
+			{$CommonItemTooltip.lifeRegen}
+			{$CommonItemTooltip.manaRegen}
 			Immunity to Suffocating 
 			Just a simple ring...
 			'''

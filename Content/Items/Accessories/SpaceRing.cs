@@ -15,6 +15,7 @@ namespace VoyagerMod.Content.Items.Accessories
             Item.value = 3;
             Item.rare = ItemRarityID.Gray;
             Item.accessory = true;
+            Item.defense = 4;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)
