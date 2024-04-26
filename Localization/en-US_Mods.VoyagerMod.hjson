@@ -163,6 +163,15 @@ Items: {
 				it doesn't smell very blue
 				'''
 		}
+
+		SpaceRing: {
+			DisplayName: Space Ring
+			Tooltip:
+			'''
+			Immunity to Suffocating 
+			Just a simple ring...
+			'''
+		}
 	}
 
 	MalachiteShield: {
@@ -199,7 +208,7 @@ Items: {
 
 			InterstellarAlex: {
 				DisplayName: Interstellar Alex
-				Tooltip: ""
+				Tooltip: Don't try this at home!
 			}
 		}
 
@@ -216,7 +225,7 @@ Items: {
 
 			InterstellarSword: {
 				DisplayName: Interstellar Sword
-				Tooltip: Better Terrablade 
+				Tooltip: Better Terrablade
 			}
 		}
 
@@ -301,17 +310,17 @@ Items: {
 		PostMoonLord: {
 			InterstellarBreastplate: {
 				DisplayName: Interstellar Breastplate
-				Tooltip: ""
+				Tooltip: The Ultimate Chest Piece
 			}
 
 			InterstellarHelmet: {
 				DisplayName: Interstellar Helmet
-				Tooltip: ""
+				Tooltip: The Ultimate Helmet
 			}
 
 			InterstellarLeggings: {
 				DisplayName: Interstellar Leggings
-				Tooltip: ""
+				Tooltip: The Ultimate Leggings
 			}
 		}
 	}
