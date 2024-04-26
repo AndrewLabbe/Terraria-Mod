@@ -84,6 +84,6 @@ namespace VoyagerMod.Content.Projectiles
             Projectile.velocity = aimOffset;
         }
 
-        public override bool? CanDamage() => false;
+        public override bool? CanDamage() => true;
     }
 }

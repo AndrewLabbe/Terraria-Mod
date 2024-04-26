@@ -234,7 +234,7 @@ namespace VoyagerMod.Content.Projectiles
             return false;
         }
 
-        // The star itself does not do contact damage.
-        public override bool? CanDamage() => false;
+        // The star itself does do contact damage.
+        public override bool? CanDamage() => true;
     }
 }
