@@ -331,6 +331,11 @@ Items: {
 			}
 		}
 	}
+
+	AstroniumStaff: {
+		DisplayName: Astronium Staff
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -388,6 +393,7 @@ Projectiles: {
 		AstroniumAttackStrike.DisplayName: Astronium Attack Strike
 		FluoriteLaser.DisplayName: Fluorite Laser
 		ElementTentacle.DisplayName: Element Tentacle
+		AstroniumAttackStar.DisplayName: Astronium Attack Star
 	}
 
 	Ranged: {
