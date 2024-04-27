@@ -1,8 +1,10 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.Localization;
 using VoyagerMod.Content.Items.Placeable;
 using VoyagerMod.Content.Utilities;
+using Terraria.DataStructures;
 
 namespace VoyagerMod.Content.Armor
 {
@@ -10,14 +12,25 @@ namespace VoyagerMod.Content.Armor
     [LegacyName("InterstellarPlayerHelmet")]
     public class InterstellarHelmet : ModItem, ILocalizedModType
     {
+        public static readonly int AdditiveGenericDamageBonus = 30;
+		public static readonly int CritBonus = 25;
         public new string LocalizationCategory => "Items.Armor.PostMoonLord";
+        public static LocalizedText SetBonusText { get; private set; }
+		public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(AdditiveGenericDamageBonus, CritBonus);
+
+        public override void SetStaticDefaults() {
+			SetBonusText = this.GetLocalization("SetBonus");
+		}
+
         public override void SetDefaults()
         {
             Item.width = 18;
             Item.height = 18;
             Item.value = 15;
-            Item.defense = 54; //132
-            Item.rare = ItemRarityID.LightPurple;
+            Item.defense = 30; //132
+            Item.rare = ItemRarityID.Purple;
+            ItemID.Sets.AnimatesAsSoul[Type] = true;
+            Main.RegisterItemAnimation(Type, new DrawAnimationVertical(5, 12));
         }
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
@@ -30,22 +43,11 @@ namespace VoyagerMod.Content.Armor
             player.armorEffectDrawOutlines = true;
         }
 
-        public override void UpdateArmorSet(Player player)
-        {
-            player.setBonus = this.GetLocalizedValue("SetBonus");
-            var modPlayer = player.Voyager();
-            player.GetAttackSpeed<MeleeDamageClass>() += 0.28f;
-            player.thorns += 3f;
-            player.ignoreWater = true;
-            player.crimsonRegen = true;
-            player.aggro += 1200;
-        }
-
         public override void UpdateEquip(Player player)
         {
             var modPlayer = player.Voyager();
-            player.GetDamage<MeleeDamageClass>() += 0.2f;
-            player.GetCritChance<MeleeDamageClass>() += 10;
+            player.GetDamage<GenericDamageClass>() += AdditiveGenericDamageBonus / 100f;
+            player.GetCritChance<MeleeDamageClass>() += 25;
         }
 
         public override void AddRecipes()

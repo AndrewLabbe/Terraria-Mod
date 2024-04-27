@@ -3,6 +3,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using VoyagerMod.Content.Utilities;
 using VoyagerMod.Content.Items.Placeable;
+using Terraria.Localization;
 
 namespace VoyagerMod.Content.Armor
 
@@ -11,6 +12,13 @@ namespace VoyagerMod.Content.Armor
     public class InterstellarBreastplate : ModItem, ILocalizedModType
     {
         public new string LocalizationCategory => "Items.Armor.PostMoonLord";
+        public static readonly int ConsumeAmmo = 20;
+		public static readonly int ManaCostReductionPercent = 40;
+		public static int MaxManaIncrease = 100;
+        public static int MaxLifeIncrease = 100;
+		public static int WeaponSpeedIncrease = 20;
+        public static readonly int AdditiveGenericDamageBonus = 15;
+        public override LocalizedText Tooltip => base.Tooltip.WithFormatArgs(MaxLifeIncrease, AdditiveGenericDamageBonus, MaxManaIncrease, ManaCostReductionPercent, ConsumeAmmo, WeaponSpeedIncrease);
         public override void Load()
         {
             // All code below runs only if we're not loading on a server
@@ -26,16 +34,19 @@ namespace VoyagerMod.Content.Armor
             Item.width = 38;
             Item.height = 34;
             Item.value = 15;
-            Item.defense = 48;
-            Item.rare = ItemRarityID.LightPurple;
+            Item.defense = 42;
+            Item.rare = ItemRarityID.Purple;
         }
 
         public override void UpdateEquip(Player player)
         {
-            var modPlayer = player.Voyager();
-            player.statLifeMax2 += 100;
-            player.GetDamage<GenericDamageClass>() += 0.08f;
-            player.GetCritChance<GenericDamageClass>() += 5;
+            player.statLifeMax2 += MaxLifeIncrease;
+            player.GetDamage<GenericDamageClass>() += AdditiveGenericDamageBonus / 100f;
+            player.statManaMax2 += MaxManaIncrease;
+			player.manaCost -= ManaCostReductionPercent / 100f;
+			player.ammoCost80 = true;
+            player.GetAttackSpeed(DamageClass.Generic) += WeaponSpeedIncrease / 100f;
+            player.lavaImmune = true;
         }
 
         public override void AddRecipes()

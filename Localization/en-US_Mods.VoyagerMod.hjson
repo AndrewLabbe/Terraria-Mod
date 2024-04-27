@@ -2,11 +2,13 @@ CommonItemTooltip: {
 	IncreasesMeleeDamageBy: "{0}% melee damage increase"
 	IncreasesAllDamageBy: "{0}% damage increase"
 	IncreasesMeleeSpeedBy: "{0}% melee speed increase"
+	IncreasesGeneralSpeedBy: "{0}% all weapon speed increase!"
 	IncreasesMaxManaBy: increases maximum mana by {0}
 	ReducesManaCostBy: "{0}% reduced mana cost"
 	ReducesAmmoConsumptionBy: "{0}% chance to not consume ammo"
 	IncreasesCritChanceBy: "{0}% critical strike chance"
 	IncreasesMovementSpeedBy: "{0}% movement speed increase"
+	IncreasesMaxLifeBy: +{0} max life increase
 }
 
 Items: {
@@ -317,17 +319,37 @@ Items: {
 		PostMoonLord: {
 			InterstellarBreastplate: {
 				DisplayName: Interstellar Breastplate
-				Tooltip: The Ultimate Chest Piece
+				Tooltip:
+					'''
+					Immunity to Lava
+					{$CommonItemTooltip.IncreasesMaxLifeBy}
+					{$CommonItemTooltip.IncreasesAllDamageBy@1}
+					{$CommonItemTooltip.IncreasesMaxManaBy@2}
+					{$CommonItemTooltip.ReducesManaCostBy@3}
+					{$CommonItemTooltip.ReducesAmmoConsumptionBy@4}
+					{$CommonItemTooltip.IncreasesGeneralSpeedBy@5}
+					'''
 			}
 
 			InterstellarHelmet: {
 				DisplayName: Interstellar Helmet
-				Tooltip: The Ultimate Helmet
+				Tooltip:
+					'''
+					{$CommonItemTooltip.IncreasesAllDamageBy}
+					{$CommonItemTooltip.IncreasesCritChanceBy@1}
+					'''
+				SetBonus: This armor set is too good for a bonus, don't you think?
 			}
 
 			InterstellarLeggings: {
 				DisplayName: Interstellar Leggings
-				Tooltip: The Ultimate Leggings
+				Tooltip:
+					'''
+					Grants ability to walk on water
+					Gives Magic Carpet effect
+					{$CommonItemTooltip.IncreasesAllDamageBy}
+					{$CommonItemTooltip.IncreasesMovementSpeedBy@1}
+					'''
 			}
 		}
 	}
