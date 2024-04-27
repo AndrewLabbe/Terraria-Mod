@@ -165,6 +165,17 @@ Items: {
 				it doesn't smell very blue
 				'''
 		}
+
+		SpaceRing: {
+			DisplayName: Space Ring
+			Tooltip:
+				'''
+				{$CommonItemTooltip.lifeRegen}
+				{$CommonItemTooltip.manaRegen}
+				Immunity to Suffocating 
+				Just a simple ring...
+				'''
+		}
 	}
 
 	MalachiteShield: {
@@ -201,7 +212,7 @@ Items: {
 
 			InterstellarAlex: {
 				DisplayName: Interstellar Alex
-				Tooltip: ""
+				Tooltip: Don't try this at home!
 			}
 		}
 
@@ -226,6 +237,11 @@ Items: {
 			TomeOfFluorescence: {
 				DisplayName: Tome Of Fluorescence
 				Tooltip: Wow, this shoots pretty fast!
+			}
+
+			InterstellarGrimoire: {
+				DisplayName: Interstellar Grimoire
+				Tooltip: It's Like an Octopus in a Book
 			}
 		}
 	}
@@ -337,6 +353,11 @@ Items: {
 			}
 		}
 	}
+
+	AstroniumStaff: {
+		DisplayName: Astronium Staff
+		Tooltip: ""
+	}
 }
 
 Tiles: {
@@ -393,6 +414,8 @@ Projectiles: {
 	Magic: {
 		AstroniumAttackStrike.DisplayName: Astronium Attack Strike
 		FluoriteLaser.DisplayName: Fluorite Laser
+		ElementTentacle.DisplayName: Element Tentacle
+		AstroniumAttackStar.DisplayName: Astronium Attack Star
 	}
 
 	Ranged: {

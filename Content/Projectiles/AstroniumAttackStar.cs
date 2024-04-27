@@ -222,18 +222,19 @@ namespace VoyagerMod.Content.Projectiles
             Vector2 drawPosition = Projectile.Center - Main.screenPosition + Vector2.UnitY * Projectile.gfxOffY;
             Vector2 origin = texture.Size() * 0.5f;
 
-            Main.spriteBatch.EnterShaderRegion();
-            GameShaders.Misc["VoyagerMod:AstroniumStaff"].SetShaderTexture(ModContent.Request<Texture2D>("VoyagerMod/Content/ExtraTextures/FabstaffStreak"));
-            GameShaders.Misc["VoyagerMod:AstroniumStaff"].Apply();
+            // Note: Removed Trail Due To Dictionary Call Issues
+            // Main.spriteBatch.EnterShaderRegion();
+            // GameShaders.Misc["VoyagerMod:AstroniumStaff"].SetShaderTexture(ModContent.Request<Texture2D>("VoyagerMod/Content/ExtraTextures/FabstaffStreak"));
+            // GameShaders.Misc["VoyagerMod:AstroniumStaff"].Apply();
 
-            PrimitiveRenderer.RenderTrail(Projectile.oldPos, new(TrailWidth, TrailColor, (_) => Projectile.Size * 0.5f, shader: GameShaders.Misc["VoyagerMod:AstroniumStaff"]), 180);
-            Main.spriteBatch.ExitShaderRegion();
+            // PrimitiveRenderer.RenderTrail(Projectile.oldPos, new(TrailWidth, TrailColor, (_) => Projectile.Size * 0.5f, shader: GameShaders.Misc["VoyagerMod:AstroniumStaff"]), 180);
+            // Main.spriteBatch.ExitShaderRegion();
 
             Main.EntitySpriteDraw(texture, drawPosition, null, Projectile.GetAlpha(Color.White), Projectile.rotation, origin, Projectile.scale, 0, 0);
             return false;
         }
 
-        // The star itself does not do contact damage.
-        public override bool? CanDamage() => false;
+        // The star itself does do contact damage.
+        public override bool? CanDamage() => true;
     }
 }

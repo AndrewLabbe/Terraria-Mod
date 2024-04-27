@@ -2,7 +2,6 @@ using VoyagerMod.Content.Projectiles;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
-using VoyagerMod.Content.Items.Placeable;
 using VoyagerMod.Content.Tiles;
 
 namespace VoyagerMod.Content.Items
@@ -12,7 +11,7 @@ namespace VoyagerMod.Content.Items
         public new string LocalizationCategory => "Content.Items";
         public const int MaxDamageBoostTime = 180;
         public const float MaxDamageBoostFactor = 18f;
-        public static readonly SoundStyle UseSound = SoundID.Item20; // new("CalamityMod/Sounds/Item/ArtAttackCast")
+        public static readonly SoundStyle UseSound = SoundID.Item20; 
         public override void SetDefaults()
         {
             Item.damage = 80;
