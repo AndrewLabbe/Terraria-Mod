@@ -9,7 +9,6 @@ using Terraria.DataStructures;
 namespace VoyagerMod.Content.Armor
 {
     [AutoloadEquip(EquipType.Head)]
-    [LegacyName("InterstellarPlayerHelmet")]
     public class InterstellarHelmet : ModItem, ILocalizedModType
     {
         public static readonly int AdditiveGenericDamageBonus = 30;
@@ -29,8 +28,6 @@ namespace VoyagerMod.Content.Armor
             Item.value = 15;
             Item.defense = 30; //132
             Item.rare = ItemRarityID.Purple;
-            ItemID.Sets.AnimatesAsSoul[Type] = true;
-            Main.RegisterItemAnimation(Type, new DrawAnimationVertical(5, 12));
         }
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
