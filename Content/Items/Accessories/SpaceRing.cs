@@ -21,8 +21,6 @@ namespace VoyagerMod.Content.Items.Accessories
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             player.buffImmune[ModContent.BuffType<Suffocating>()] = true;
-            player.lifeRegen += 2;
-            player.manaRegen += 2;
             player.moveSpeed += 0.1f;
         }
 

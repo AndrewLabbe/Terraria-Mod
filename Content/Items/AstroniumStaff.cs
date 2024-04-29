@@ -14,7 +14,7 @@ namespace VoyagerMod.Content.Items
         public static readonly SoundStyle UseSound = SoundID.Item20; 
         public override void SetDefaults()
         {
-            Item.damage = 80;
+            Item.damage = 0;
             Item.DamageType = DamageClass.Magic;
             Item.mana = 20;
             Item.width = 70;

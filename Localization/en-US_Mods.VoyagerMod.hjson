@@ -170,8 +170,6 @@ Items: {
 			DisplayName: Space Ring
 			Tooltip:
 				'''
-				{$CommonItemTooltip.lifeRegen}
-				{$CommonItemTooltip.manaRegen}
 				Immunity to Suffocating 
 				Just a simple ring...
 				'''
@@ -381,7 +379,7 @@ WorldGen: {
 Buffs: {
 	ElectricTroublemaker: {
 		DisplayName: Electric Troublemaker
-		Description: Mods.VoyagerMod.Buffs.ElectricTroublemaker.Description
+		Description: It's Rotom from Pokemon!
 	}
 
 	Suffocating: {
@@ -394,7 +392,7 @@ Content: {
 	Items: {
 		AstroniumStaff: {
 			DisplayName: Astronium Staff
-			Tooltip: Like the Last Prism but worse
+			Tooltip: It's Literally just a Sparkly Star
 		}
 	}
 
